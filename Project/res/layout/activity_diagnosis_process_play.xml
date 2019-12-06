@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <cn.vcinema.cinema.activity.videoplay.DiagnosisProcessVideoView android:id="@id/video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/play_diagnosis_bg" android:background="@drawable/play_diagnosis_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/layout_top" android:background="@drawable/jz_title_bg" android:paddingLeft="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/back" android:padding="3.0dip" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_marginTop="12.0dip" android:src="@drawable/jz_click_back_selector" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:maxLines="2" android:layout_toLeftOf="@id/battery_time_layout" android:layout_toRightOf="@id/back" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="right" android:orientation="vertical" android:id="@id/carton_layout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/text_15" android:textColor="@color/c_ffffff" android:background="@drawable/shape_btn_play_is_carton" android:padding="@dimen/base_dimen_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/play_is_carton" />
+        <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:id="@id/play_normal" android:background="@drawable/shape_btn_play_is_carton" android:padding="@dimen/base_dimen_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_20">
+            <TextView android:textSize="@dimen/text_15" android:textColor="@color/c_ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/play_normal" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_8" android:src="@drawable/play_normal_icon" android:scaleType="centerCrop" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:id="@id/play_carton" android:background="@drawable/shape_btn_play_is_carton" android:padding="@dimen/base_dimen_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_14">
+            <TextView android:textSize="@dimen/text_15" android:textColor="@color/c_ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/play_carton" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_8" android:src="@drawable/play_carton_img" android:scaleType="centerCrop" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_play_diagnosis_finish" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_183" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/repair_success" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/text_20" android:textColor="@color/color_efefef" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_50" android:text="@string/finish_play_diagnosis" android:lineSpacingExtra="@dimen/base_dimen_25" />
+    </LinearLayout>
+</RelativeLayout>

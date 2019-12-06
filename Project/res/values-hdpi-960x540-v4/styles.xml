@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.AppBarOverlay" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.NoActionBar" parent="@style/AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.PopupOverlay" parent="@style/ThemeOverlay.AppCompat.Light" />
+    <style name="CustomProgressStyle" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:maxWidth">30.0dip</item>
+        <item name="android:maxHeight">30.0dip</item>
+        <item name="android:minWidth">21.0dip</item>
+        <item name="android:minHeight">21.0dip</item>
+    </style>
+    <style name="PopupAnimation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+    <style name="case_dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparency</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+    <style name="detail_size">
+        <item name="android:textSize">9.0sp</item>
+    </style>
+    <style name="dialog_activity_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/top_bar_bg</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+    <style name="dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/home_line</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:maxHeight">280.0dip</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+    <style name="header_size">
+        <item name="android:textSize">15.0sp</item>
+    </style>
+    <style name="normal_size">
+        <item name="android:textSize">12.0sp</item>
+    </style>
+    <style name="small_size">
+        <item name="android:textSize">8.0sp</item>
+    </style>
+    <style name="tab_item_text_color">
+        <item name="android:textSize">8.0dip</item>
+        <item name="android:textColor">@drawable/textselector</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="title_size">
+        <item name="android:textSize">13.5sp</item>
+    </style>
+    <style name="top_text_color">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">@color/c_ffffff</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="video_style">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ffd1d1d1</item>
+    </style>
+    <style name="xxl_size">
+        <item name="android:textSize">18.0sp</item>
+    </style>
+</resources>

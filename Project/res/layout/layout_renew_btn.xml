@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/right_renew_layout" android:layout_width="106.5dip" android:layout_height="41.5dip" android:layout_marginTop="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_14" android:textColor="@color/color_694000" android:gravity="center" android:id="@id/right_tv_renew_vip" android:background="@drawable/corners_2dp_e1ae5f_bg" android:layout_width="101.5dip" android:layout_height="30.5dip" android:text="@string/renew_vip" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="@dimen/text_10" android:textStyle="bold" android:textColor="@color/color_efefef" android:gravity="center" android:id="@id/right_tv_renew_activity" android:background="@drawable/img_renew_activity_bg" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="连续包月仅8元" android:layout_alignParentRight="true" />
+</RelativeLayout>

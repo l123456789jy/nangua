@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Classify_movie_top_space">15.0dip</dimen>
+    <dimen name="home_movie_left_space">14.0dip</dimen>
+    <dimen name="movie_evaluation_ratingbar_height">12.0px</dimen>
+    <dimen name="activity_horizontal_margin">64.0dip</dimen>
+</resources>

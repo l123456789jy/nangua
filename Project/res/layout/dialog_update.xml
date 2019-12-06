@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/transparency" android:paddingTop="@dimen/space_5" android:paddingBottom="@dimen/space_5" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_16" android:textColor="@color/color_efefef" android:gravity="center" android:id="@id/tv_du_updateDate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/soft_update" android:singleLine="true" android:textIsSelectable="true" />
+    <ScrollView android:paddingLeft="@dimen/base_dimen_40" android:paddingRight="@dimen/base_dimen_40" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.5dip">
+        <TextView android:textSize="@dimen/text_14" android:textColor="@color/color_efefef" android:id="@id/tv_du_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="7.5dip" />
+    </ScrollView>
+    <View android:background="@color/color_222222" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_marginTop="20.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" style="android:attr/buttonBarStyle">
+        <Button android:textSize="@dimen/text_16" android:textColor="@color/feedback_dark" android:id="@id/bt_du_cancel" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/cancel_later" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+        <View android:id="@id/line" android:background="@color/color_222222" android:layout_width="2.0px" android:layout_height="fill_parent" android:layout_marginTop="@dimen/space_5" />
+        <Button android:textSize="@dimen/text_16" android:textColor="#fff42c2c" android:id="@id/bt_du_update" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/update_now" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

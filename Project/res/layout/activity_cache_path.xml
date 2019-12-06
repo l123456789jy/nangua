@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/top_bar" />
+    <TextView android:textSize="@dimen/text_14" android:textColor="@color/color_b0b0b0" android:id="@id/path_reminder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_10" android:layout_marginTop="@dimen/space_14" android:text="@string/cache_path_choice_reminder" />
+    <android.support.v7.widget.RecyclerView android:id="@id/storage_recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/space_14" />
+</LinearLayout>

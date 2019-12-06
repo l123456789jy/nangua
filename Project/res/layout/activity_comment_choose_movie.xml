@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" layout="@layout/top_bar" />
+    <cn.vcinema.cinema.view.ClearEditText android:textColor="@color/c_ffffff" android:textColorHint="@color/color_444444" android:id="@id/comment_choose_search_edit" android:background="@drawable/shallow_red_round_lin" android:paddingLeft="@dimen/space_14" android:paddingRight="@dimen/base_dimen_24" android:layout_width="fill_parent" android:layout_height="@dimen/space_33" android:layout_marginLeft="@dimen/space_14" android:layout_marginTop="@dimen/space_12" android:layout_marginRight="@dimen/space_14" android:hint="@string/comment_search_hint_reminder" android:singleLine="true" android:drawableLeft="@drawable/search_img" android:drawableRight="@drawable/edit_clear_img" android:drawablePadding="10.0dip" android:layout_below="@id/title_bar" android:inputType="textAutoComplete|textNoSuggestions" android:imeOptions="actionSearch" android:textCursorDrawable="@null" style="@style/normal_size" />
+    <com.common.view.library.precyclerview.LRecyclerView android:id="@id/comment_choose_movie_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/space_12" android:layout_below="@id/comment_choose_search_edit" />
+</RelativeLayout>

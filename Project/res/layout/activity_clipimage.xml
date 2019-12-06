@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title_bar" android:background="#ff0e0e0e" android:layout_width="fill_parent" android:layout_height="49.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="#ffefefef" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="100.0dip" android:layout_marginRight="20.0dip" android:text="@string/cropimg_moveandatt" android:singleLine="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.common.view.library.clip.view.ClipImageLayout android:id="@id/id_clipImageLayout" android:background="#ff444444" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ll_botom" android:layout_below="@id/title_bar" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_botom" android:background="#ff0e0e0e" android:layout_width="fill_parent" android:layout_height="49.0dip" android:layout_alignParentBottom="true">
+        <Button android:textSize="16.0sp" android:textColor="#ffdbdbdb" android:id="@id/btn_cancel" android:background="@null" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/cacel" android:layout_weight="1.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:background="#ff222222" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+        <Button android:textSize="16.0sp" android:textColor="#fff42c2c" android:id="@id/id_action_clip" android:background="@null" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/exit_sure" android:layout_weight="1.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tipLayout" android:background="@color/main_color" android:padding="@dimen/media_controller_tip_padding" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/net_tip_icon" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/home_title" android:id="@id/tipMessage" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/media_controller_tip_padding" android:layout_weight="1.0" />
+    <ImageButton android:id="@id/btnCloseTip" android:background="@drawable/close_tip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/media_controller_tip_padding" />
+</LinearLayout>

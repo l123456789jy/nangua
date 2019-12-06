@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_1c1c1c" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/top_rl" android:background="@drawable/bottom_shade_layout_bg" android:layout_width="fill_parent" android:layout_height="@dimen/space_50">
+        <cn.vcinema.cinema.view.ColorTrackTabLayout android:id="@id/fragment_comment_tablayout" android:layout_width="wrap_content" android:layout_height="fill_parent" app:ctvText_size="@dimen/text_17" app:ctvText_origin_color="@color/color_efefef" app:ctvText_change_color="@color/color_f42c2c" app:tabIndicatorColor="@color/red" app:tabMode="fixed" app:tabTextAppearance="@style/TextAppearance.Design.Tab" />
+        <ImageView android:id="@id/img_right" android:padding="@dimen/base_dimen_28" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_write_comment" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager android:id="@id/fragment_comment_viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

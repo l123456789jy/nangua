@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_222222" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/layout_top" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <RelativeLayout android:id="@id/layout_back" android:layout_width="40.0dip" android:layout_height="50.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_btn_selector" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="14.0sp" android:textColor="@color/white_color" android:ellipsize="end" android:id="@id/tv_video_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200.0dip" android:maxLines="1" android:layout_toRightOf="@id/layout_back" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center" android:id="@id/img_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/text_16" android:textColor="@color/color_efefef" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" />
+    </LinearLayout>
+</RelativeLayout>

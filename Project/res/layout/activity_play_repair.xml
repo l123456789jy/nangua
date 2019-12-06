@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/topbar" layout="@layout/top_bar" />
+    <RelativeLayout android:id="@id/repair_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/topbar">
+        <ImageView android:id="@id/repair_icon" android:layout_width="@dimen/base_dimen_144" android:layout_height="@dimen/base_dimen_144" android:layout_marginTop="@dimen/base_dimen_84" android:src="@drawable/play_repair" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/text_15" android:textColor="@color/color_efefef" android:gravity="center_horizontal" android:id="@id/repair_tip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_36" android:text="@string/play_repair_context_01" android:layout_below="@id/repair_icon" android:lineSpacingExtra="@dimen/base_dimen_8" />
+        <TextView android:textSize="@dimen/text_13" android:textColor="@color/viewfinder_frame" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_22" android:text="@string/play_repair_context_02" android:layout_below="@id/repair_tip" />
+    </RelativeLayout>
+    <Button android:textSize="@dimen/text_13" android:textColor="@color/color_efefef" android:id="@id/btn_play_repair_start" android:background="@color/play_repair_btn_bg" android:layout_width="@dimen/base_dimen_166" android:layout_height="@dimen/base_dimen_74" android:layout_marginBottom="@dimen/base_dimen_92" android:text="@string/play_repair_start" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

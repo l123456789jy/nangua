@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/loading_view" android:layout_width="fill_parent" android:layout_height="@dimen/dp_60"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.common.view.library.precyclerview.progressindicator.AVLoadingIndicatorView android:id="@id/loading_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_4" app:indicator="BallPulse" />
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_f42c2c" android:id="@id/loading_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_4" android:text="@string/list_footer_loading" />
+</LinearLayout>

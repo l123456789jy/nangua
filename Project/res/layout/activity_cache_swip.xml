@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/main_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/top_bar" />
+        <RelativeLayout android:id="@id/rl_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_redact" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <View android:background="@color/color_333333" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <TextView android:textSize="@dimen/text_14" android:textColor="@color/license_dark" android:gravity="center" android:id="@id/txt_allchoice" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/all_choice" android:layout_weight="1.0" />
+                        <View android:background="@color/color_333333" android:layout_width="1.0px" android:layout_height="40.0dip" />
+                        <TextView android:textSize="@dimen/text_14" android:textColor="@color/color_444444" android:gravity="center" android:id="@id/txt_delete" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/delete" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </LinearLayout>
+                <RelativeLayout android:id="@id/rl_show_memory" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                    <ProgressBar android:id="@id/memory_progressBar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:max="100" android:progress="0" android:progressDrawable="@drawable/memory_show_progress_bg" style="?android:attr/progressBarStyleHorizontal" />
+                    <TextView android:textSize="@dimen/text_8" android:textColor="@color/login_disabled_text" android:gravity="center" android:id="@id/txt_memory_remind" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ll_bottom">
+                <com.common.view.library.precyclerview.LRecyclerView android:id="@id/movieListview" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <include android:id="@id/empty_view" android:visibility="gone" layout="@layout/no_network_layout" />
+    </LinearLayout>
+    <View android:id="@id/cache_view_stub" android:background="@drawable/top_shade_layout_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

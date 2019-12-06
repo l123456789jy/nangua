@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/corners_8dp_222222_bg" android:paddingTop="@dimen/base_dimen_28" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zsr="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_18" android:textColor="@color/color_efefef" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        <TextView android:textSize="@dimen/text_18" android:textColor="@color/color_f42c2c" android:id="@id/tv_get" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_16" android:text="" />
+        <TextView android:textColor="@color/color_efefef" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/" />
+        <TextView android:textSize="@dimen/text_18" android:textColor="@color/color_efefef" android:id="@id/tv_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    </LinearLayout>
+    <com.zhengsr.viewpagerlib.view.GlideViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_400" />
+    <com.zhengsr.viewpagerlib.indicator.NormalIndicator android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/indicator" android:layout_width="wrap_content" android:layout_height="@dimen/base_dimen_4" android:layout_marginTop="@dimen/base_dimen_28" android:layout_marginBottom="@dimen/base_dimen_24" zsr:normal_selector="@drawable/mine_banner_indicator_bg" />
+</LinearLayout>

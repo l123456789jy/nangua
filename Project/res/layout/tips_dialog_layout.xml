@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/home_line" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_15" android:textColor="@color/license_dark" android:layout_gravity="center_horizontal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_15" android:text="@string/reminder_title" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_expanded" android:paddingLeft="@dimen/space_15" android:paddingRight="@dimen/space_15" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_18" android:layout_marginBottom="@dimen/space_14">
+        <TextView android:textSize="@dimen/text_13" android:textColor="@color/color_b0b0b0" android:layout_gravity="center_horizontal" android:id="@id/txt_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.5" />
+        <TextView android:textSize="@dimen/text_11" android:textColor="@color/color_b0b0b0" android:layout_gravity="center_horizontal" android:id="@id/txt_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.5" />
+    </LinearLayout>
+    <LinearLayout android:background="@color/color_333333" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textSize="@dimen/text_13" android:textColor="@color/color_b0b0b0" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/txt_ok" android:padding="@dimen/space_14" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ok" />
+</LinearLayout>

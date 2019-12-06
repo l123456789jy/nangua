@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="@dimen/base_dimen_116" android:layout_height="@dimen/base_dimen_40"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/prevue_progressbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_4" android:progressDrawable="@drawable/prevue_seekbar" style="?android:attr/progressBarStyleHorizontal" />
+    <TextView android:textSize="@dimen/text_20" android:textColor="@color/c_ffffff" android:id="@id/prevue_viewpager_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_6" android:layout_below="@id/prevue_progressbar" />
+    <ImageView android:id="@id/prevue_viewpager_poster" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/base_dimen_6" android:scaleType="fitCenter" android:layout_below="@id/prevue_progressbar" />
+</RelativeLayout>

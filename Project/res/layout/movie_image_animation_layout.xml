@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_movie_picture" android:layout_width="@dimen/base_dimen_98" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <RelativeLayout android:background="#cc222222" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/iv_movie_picture">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_collect_success" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/space_12" android:textColor="#ffefefef" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="加入片单" />
+            <ImageView android:layout_width="@dimen/base_dimen_32" android:layout_height="@dimen/base_dimen_32" android:layout_marginLeft="@dimen/base_dimen_12" android:src="@drawable/icon_collect_success" android:scaleType="fitXY" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_left_scroll" android:layout_width="@dimen/base_dimen_46" android:layout_height="@dimen/base_dimen_20" android:layout_marginLeft="@dimen/base_dimen_16" android:src="@drawable/icon_left_scroll" android:scaleType="fitXY" android:layout_toRightOf="@id/iv_movie_picture" android:layout_centerVertical="true" />
+</RelativeLayout>

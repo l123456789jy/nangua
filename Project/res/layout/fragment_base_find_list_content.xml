@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/layout_sub_parent" android:background="@color/color_1c1c1c" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <cn.pumpkin.view.DispatchTouchRecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</RelativeLayout>

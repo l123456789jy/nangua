@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/base_dimen_24" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/backgroud_top" android:background="@drawable/img_modal_wallet_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/layout_medal" android:paddingLeft="@dimen/base_dimen_28" android:paddingRight="@dimen/base_dimen_28" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <android.support.v7.widget.RecyclerView android:id="@id/recyclerViewModal" android:layout_width="0.0dip" android:layout_height="@dimen/base_dimen_120" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/img_gold_right_arrow" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_16" android:src="@drawable/img_medal_right_arrow" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_myself_info" android:background="@color/color_222222" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_10" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/rl_top">
+        <cn.vcinema.cinema.utils.glide.CircleImageView android:id="@id/img_user_header" android:layout_width="@dimen/space_54" android:layout_height="@dimen/space_54" android:layout_marginLeft="@dimen/base_dimen_20" android:layout_marginTop="@dimen/base_dimen_20" android:layout_marginBottom="@dimen/base_dimen_20" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/ll_user_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_32" android:layout_marginTop="@dimen/base_dimen_20" android:layout_toRightOf="@id/img_user_header">
+            <TextView android:textSize="@dimen/text_15" android:textColor="@color/color_efefef" android:gravity="center" android:id="@id/txt_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            <ImageView android:visibility="gone" android:layout_width="@dimen/space_10" android:layout_height="@dimen/space_10" android:layout_marginLeft="@dimen/space_8" android:src="@drawable/icon_medal" android:scaleType="fitXY" />
+            <TextView android:textSize="@dimen/text_10" android:textColor="#ffd29d4c" android:gravity="center" android:id="@id/tv_medal_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_8" android:text="" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_action" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_32" android:layout_marginTop="@dimen/space_9" android:layout_toRightOf="@id/img_user_header" android:layout_below="@id/ll_user_name">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_attention" android:background="@drawable/shape_friends_info" android:paddingLeft="@dimen/base_dimen_20" android:paddingRight="@dimen/base_dimen_20" android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_marginRight="@dimen/base_dimen_12" android:minWidth="68.0dip">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_attention_left" android:visibility="visible" android:layout_width="@dimen/space_12" android:layout_height="@dimen/space_12" android:src="@drawable/icon_attention" />
+                <TextView android:textSize="@dimen/text_14" android:textColor="@color/color_f42c2c" android:gravity="center" android:id="@id/tv_attention" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_8" android:text="关注" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/text_14" android:textColor="@color/color_9f9f9f" android:gravity="center" android:id="@id/tv_send_message" android:background="@drawable/shape_friends_info" android:paddingLeft="@dimen/base_dimen_24" android:paddingRight="@dimen/base_dimen_24" android:layout_width="wrap_content" android:layout_height="24.0dip" android:text="@string/send_msg" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@id/view_hline_zero" android:background="@color/color_1c1c1c" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_2" app:layout_constraintTop_toBottomOf="@id/rl_myself_info" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_comment_info" android:background="@color/color_222222" android:layout_width="fill_parent" android:layout_height="@dimen/space_65" app:layout_constraintTop_toBottomOf="@id/view_hline_zero">
+        <RelativeLayout android:id="@id/rl_attention" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <View android:id="@id/attention_view" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_centerInParent="true" />
+            <TextView android:textSize="@dimen/text_15" android:textColor="@color/color_9f9f9f" android:gravity="center" android:id="@id/tv_attention_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_above="@id/attention_view" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/text_13" android:textColor="@color/color_9f9f9f" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关注" android:layout_below="@id/attention_view" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_fans" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <View android:id="@id/fans_view" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_centerInParent="true" />
+            <TextView android:textSize="@dimen/text_15" android:textColor="@color/color_9f9f9f" android:gravity="center" android:id="@id/tv_fans_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_above="@id/fans_view" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/text_13" android:textColor="@color/color_9f9f9f" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="粉丝" android:layout_below="@id/fans_view" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_comment_text" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <View android:id="@id/comment_text_view" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_centerInParent="true" />
+            <TextView android:textSize="@dimen/text_15" android:textColor="@color/color_9f9f9f" android:gravity="center" android:id="@id/tv_comment_text_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_above="@id/comment_text_view" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/text_13" android:textColor="@color/color_9f9f9f" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="影评" android:layout_below="@id/comment_text_view" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@id/view_hline_one" android:background="@color/color_1c1c1c" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_2" android:layout_marginTop="@dimen/space_8" app:layout_constraintTop_toBottomOf="@id/ll_comment_info" />
+    <RelativeLayout android:id="@id/rl_see_time_title" android:background="@color/color_222222" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_24" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/view_hline_one">
+        <TextView android:textColor="@color/color_efefef" android:gravity="center_vertical" android:background="@color/color_222222" android:paddingLeft="@dimen/base_dimen_32" android:layout_width="wrap_content" android:layout_height="@dimen/base_dimen_70" android:text="总观影时长" />
+        <TextView android:textSize="@dimen/text_12" android:textColor="@color/color_f42c2c" android:gravity="center" android:id="@id/tv_see_time_temp" android:background="@color/color_222222" android:paddingRight="@dimen/base_dimen_32" android:layout_width="wrap_content" android:layout_height="@dimen/base_dimen_70" android:text="小时" android:layout_alignParentRight="true" />
+        <TextView android:textSize="@dimen/text_15" android:textColor="@color/color_f42c2c" android:gravity="center" android:id="@id/txt_watch_movie_time" android:background="@color/color_222222" android:layout_width="wrap_content" android:layout_height="@dimen/base_dimen_70" android:text="" android:layout_toLeftOf="@id/tv_see_time_temp" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@color/color_222222" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/rl_see_time_title">
+        <cn.vcinema.cinema.view.SeeTimeView android:id="@id/friends_see_time_view" android:layout_width="fill_parent" android:layout_height="240.0dip" android:layout_marginLeft="@dimen/space_14" android:layout_marginRight="@dimen/space_14" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center_vertical" android:background="@color/color_222222" android:paddingLeft="@dimen/base_dimen_30" android:paddingRight="@dimen/base_dimen_30" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_60">
+        <TextView android:textSize="@dimen/text_15" android:textColor="@color/color_efefef" android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="@dimen/base_dimen_40" android:text="@string/comment" />
+        <TextView android:textSize="@dimen/text_11" android:textColor="@color/color_9f9f9f" android:gravity="bottom" android:id="@id/tv_comment_number" android:layout_width="wrap_content" android:layout_height="@dimen/base_dimen_40" android:layout_marginLeft="@dimen/base_dimen_10" />
+    </LinearLayout>
+</LinearLayout>

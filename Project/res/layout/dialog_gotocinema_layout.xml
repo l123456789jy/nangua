@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/space_14" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/dialog_gotocinema_icon" />
+        <TextView android:id="@id/txt_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_18" style="@style/size_9f_14" />
+        <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:id="@id/txt_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_15" android:text="@string/continue_to_play" style="@style/size_ef_14" />
+            <ImageView android:id="@id/image_close" android:paddingLeft="@dimen/space_10" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/dialog_gotocinema_close_icon" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

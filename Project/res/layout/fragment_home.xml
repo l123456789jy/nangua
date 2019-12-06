@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_1c1c1c" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.common.view.library.precyclerview.LRecyclerView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <include android:id="@id/empty_view" android:visibility="gone" layout="@layout/no_network_layout" />
+    <RelativeLayout android:id="@id/rl_search" android:background="@drawable/bottom_shade_layout_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/space_49" android:layout_alignParentTop="true">
+        <ImageView android:gravity="center" android:id="@id/home_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/homepage_logo" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/search_home_btn" android:padding="@dimen/space_14" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_search_normal" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/bottom_vip_rl" android:background="@color/homepage_vipsurplus_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_52" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/bottom_vip_rl_close" android:layout_width="@dimen/base_dimen_60" android:layout_height="fill_parent" android:src="@drawable/home_vipsurplus_close" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_12" android:textColor="@color/color_9f9f9f" android:ellipsize="marquee" android:id="@id/bottom_vip_rl_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vip_surplus_msg" android:singleLine="true" android:layout_toRightOf="@id/bottom_vip_rl_close" android:layout_centerVertical="true" android:marqueeRepeatLimit="marquee_forever" />
+        <TextView android:textSize="@dimen/text_12" android:textColor="@color/color_f42c2c" android:id="@id/bottom_vip_rl_continue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/base_dimen_20" android:text="@string/renew_tip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

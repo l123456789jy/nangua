@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/color_bdbdbd" android:gravity="center_vertical" android:id="@id/text_titletop_name" android:background="@color/search_top_edit_bg" android:paddingLeft="@dimen/base_dimen_28" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_66" android:text="国家" />
+    <android.support.v7.widget.RecyclerView android:id="@id/recyclerview_search" android:paddingLeft="@dimen/base_dimen_28" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/text_titletop_name" />
+    <TextView android:textSize="@dimen/text_14" android:textColor="@color/color_dbdbdb" android:layout_gravity="center_horizontal" android:id="@id/txt_more" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_30" android:layout_marginBottom="@dimen/base_dimen_30" android:text="@string/search_more" android:drawableRight="@drawable/search_more" android:drawablePadding="@dimen/base_dimen_12" android:layout_below="@id/recyclerview_search" android:layout_centerHorizontal="true" />
+</RelativeLayout>

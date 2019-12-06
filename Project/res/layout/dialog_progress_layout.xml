@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/top_bar_bg" android:paddingLeft="@dimen/space_18" android:paddingTop="@dimen/space_22" android:paddingRight="@dimen/space_18" android:paddingBottom="@dimen/space_22" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_15" android:textColor="@color/color_b6b6b6" android:layout_gravity="center_horizontal" android:id="@id/txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/progress_dialog_title" />
+    <ProgressBar android:id="@id/progressbar" android:layout_width="fill_parent" android:layout_height="6.0dip" android:layout_marginTop="@dimen/space_20" android:layout_marginRight="4.0dip" android:max="100" android:progress="0" android:progressDrawable="@drawable/play_seekbar_background" android:text="@string/downloadingapk" style="?android:attr/progressBarStyleHorizontal" />
+    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_5" android:layout_marginBottom="@dimen/space_5">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/text_11" android:textColor="@color/color_666666" android:id="@id/txt_schedule" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/text_11" android:textColor="@color/color_666666" android:id="@id/txt_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="cn.vcinema.cinema" platformBuildVersionCode="27" platformBuildVersionName="8.1.0" android:debuggable="true">
+    <permission android:name="cn.vcinema.cinema.permission.JPUSH_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.hardware.camera"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.NETWORK_PROVIDER"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="cn.vcinema.cinema.permission.JPUSH_MESSAGE"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_ADDED"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_CHANGED"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_INSTALL"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REPLACED"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <permission android:name="cn.vcinema.cinema.permission.MIPUSH_RECEIVE" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="cn.vcinema.cinema.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="cn.vcinema.cinema.permission.MIPUSH_RECEIVE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="cn.vcinema.cinema.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher_default" android:label="@string/app_name" android:largeHeap="true" android:name="cn.vcinema.cinema.application.PumpkinApplication" android:resizeableActivity="true" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <meta-data android:name="com.alibaba.app.appkey" android:value="24836716"/>
+        <meta-data android:name="com.alibaba.app.appsecret" android:value="5682bf3b28c953ce41eb38aceb8052e3"/>
+        <meta-data android:name="UMENG_APPKEY" android:value="53ed746ffd98c5faf901ba08"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="aph0"/>
+        <meta-data android:name="UMENG_MESSAGE_SECRET" android:value="a737e4d285135b0094536758312ecfce"/>
+        <meta-data android:name="TencentMapSDK" android:value="YIJBZ-XVPHW-HXLRN-RTTKG-AYQW7-XRFAH"/>
+        <meta-data android:name="RunningMode" android:value="debug"/>
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="365cd9bc8a30e1482fdac0d02ee250c4"/>
+        <meta-data android:name="android.max_aspect" android:value="2.3"/>
+        <receiver android:exported="false" android:name="cn.vcinema.cinema.receiver.AliPushMsgReceiver">
+            <intent-filter>
+                <action android:name="com.alibaba.push2.action.NOTIFICATION_OPENED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.alibaba.push2.action.NOTIFICATION_REMOVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.alibaba.sdk.android.push.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation|screenSize" android:exported="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="cn.vcinema.cinema.activity.main.MainActivity" android:screenOrientation="portrait" android:theme="@style/splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="start" android:scheme="sharepumpkin"/>
+            </intent-filter>
+        </activity>
+       
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation|screenSize" android:name="cn.vcinema.cinema.activity.guide.GuideActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation|screenSize" android:name="cn.vcinema.cinema.activity.classify.MovieClassifyActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation|screenSize" android:name="cn.vcinema.cinema.activity.search.SearchActivity2" android:screenOrientation="portrait"/>
+        <activity android:configChanges="layoutDirection|locale" android:name="cn.vcinema.cinema.activity.setting.AboutActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="layoutDirection|locale" android:name="cn.vcinema.cinema.activity.setting.SettingActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="layoutDirection|locale" android:name="cn.vcinema.cinema.activity.setting.MovieCachePathActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation|screenSize" android:name="cn.vcinema.cinema.activity.moviedetail.MovieDetailAndCommentActivity" android:screenOrientation="portrait" android:theme="@style/NoTranslucentTheme"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation" android:name="cn.vcinema.cinema.activity.login.LoginActivity" android:screenOrientation="portrait" android:theme="@style/NoTranslucentTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="layoutDirection|locale" android:name="cn.vcinema.cinema.activity.overseas.OverseasActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="layoutDirection|locale" android:name="cn.vcinema.cinema.activity.persioncenter.PersonalInformationActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="layoutDirection|locale" android:name="cn.vcinema.cinema.activity.setting.FeedBackActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="layoutDirection|locale" android:name="cn.vcinema.cinema.activity.history.MovieHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="layoutDirection|locale" android:name="cn.vcinema.cinema.activity.collect.MovieCollectActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation|screenSize" android:name="cn.vcinema.cinema.activity.moviecache.CacheMoviesActivity" android:screenOrientation="portrait" android:theme="@style/TranslucentTheme"/>
+        <activity android:configChanges="layoutDirection|locale" android:name="cn.vcinema.cinema.activity.moviecache.DownloadingMoviesActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation|screenSize" android:name="cn.vcinema.cinema.activity.moviecache.TeleplayCacheSwipActivity" android:screenOrientation="portrait" android:theme="@style/TranslucentTheme"/>
+        <activity android:configChanges="layoutDirection|locale" android:name="cn.vcinema.cinema.activity.upgradeprogress.ProgressDialogActivity" android:screenOrientation="portrait" android:theme="@style/dialog_activity_style"/>
+        <activity android:configChanges="layoutDirection|locale" android:name="cn.vcinema.cinema.activity.web.PayWebActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="layoutDirection|locale" android:name="cn.vcinema.cinema.activity.web.WebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="layoutDirection|locale" android:name="cn.vcinema.cinema.zxing.app.CaptureActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="layoutDirection|locale" android:name="cn.vcinema.cinema.activity.payreturn.ReturnActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="return.app" android:scheme="vcinema"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="layoutDirection|locale" android:exported="false" android:name="com.common.view.library.croping.CropImageActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:configChanges="layoutDirection|locale" android:name="com.common.view.library.clip.ClipActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="cn.vcinema.cinema.wxapi.WXPayEntryActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:configChanges="layoutDirection|locale" android:name="cn.vcinema.cinema.activity.setting.PlayRepairActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation|screenSize" android:name="cn.vcinema.cinema.activity.unfluencyrepair.RepairSuccessActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation|screenSize" android:name="cn.vcinema.cinema.activity.unfluencyrepair.RepairFailActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:name="cn.vcinema.cinema.activity.recommend.RecommendActivity" android:screenOrientation="sensorLandscape"/>
+        <meta-data android:name="cn.vcinema.cinema.view.glide.CustomGlideModul" android:value="GlideModule"/>
+        <provider android:authorities="cn.vcinema.cinema.fileProvider" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <service android:name="com.edge.pcdn.PcdnVodService" android:process=":PcdnVodService"/>
+        <service android:name="cn.vcinema.cinema.umpush.NotificationService"/>
+        <service android:name="cn.vcinema.cinema.download.DownloadAppService"/>
+        <receiver android:name="cn.vcinema.cinema.receiver.BatteryBroadcastReciver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="cn.vcinema.cinema.receiver.AppRegister" android:permission="com.tencent.mm.plugin.permission.SEND">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation|screenSize" android:name="cn.vcinema.cinema.activity.unfluencyrepair.DiagnosisProcessActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="layoutDirection|locale" android:name="cn.vcinema.cinema.activity.prevuemovie.PrevueActivity" android:screenOrientation="portrait" android:theme="@style/PrevueTheme"/>
+        <activity android:configChanges="layoutDirection|locale" android:launchMode="singleTask" android:name="cn.vcinema.cinema.activity.renew.RenewActivity2" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="cn.jpush.android.ui.PopWinActivity" android:theme="@style/MyDialogStyle"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="cn.jpush.android.ui.PushActivity" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="cn.vcinema.cinema"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="false" android:name="cn.jpush.android.service.PushService" android:process=":mult">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER"/>
+                <action android:name="cn.jpush.android.intent.REPORT"/>
+                <action android:name="cn.jpush.android.intent.PushService"/>
+                <action android:name="cn.jpush.android.intent.PUSH_TIME"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="cn.vcinema.cinema.DataProvider" android:exported="false" android:name="cn.jpush.android.service.DataProvider"/>
+        <service android:enabled="true" android:exported="true" android:name="cn.jpush.android.service.DaemonService">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService"/>
+                <category android:name="cn.vcinema.cinema"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="cn.vcinema.cinema.DownloadProvider" android:exported="true" android:name="cn.jpush.android.service.DownloadProvider"/>
+        <receiver android:enabled="true" android:exported="false" android:name="cn.jpush.android.service.PushReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY"/>
+                <category android:name="cn.vcinema.cinema"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="cn.jpush.android.service.AlarmReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="cn.vcinema.cinema.receiver.JpushMessageReceiver">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION"/>
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/>
+                <action android:name="cn.jpush.android.intent.CONNECTION"/>
+                <category android:name="cn.vcinema.cinema"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>
+        <meta-data android:name="JPUSH_APPKEY" android:value="a51a39582d7794ad7228a943"/>
+        <activity android:name="cn.vcinema.cinema.activity.web.PayRecordActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="layoutDirection|locale" android:launchMode="singleTask" android:name="cn.vcinema.cinema.activity.login.DetainmentActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation|screenSize" android:launchMode="singleTask" android:name="cn.vcinema.cinema.activity.classify.ClassifyErrorActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="cn.vcinema.cinema.activity.alipush.AliPushPopupActivity" android:screenOrientation="portrait" android:theme="@style/AliPushTranslate"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.jdpaysdk.author.AuthorActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Activity.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="jdpauthjdjr111061977001"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="jdpauth"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.jdpaysdk.author.browser.BrowserActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.vcinema.cinema.activity.web.Activity_Activity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="layoutDirection|locale" android:name="cn.vcinema.cinema.activity.splendidpreview.SplendidPreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.vcinema.cinema.activity.actormovieextension.ActorMovieExtensionActivity"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.vcinema.vcinemalibrary.pumpkin_network.NetBroadCastReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="layoutDirection|locale" android:launchMode="singleTask" android:name="cn.vcinema.cinema.activity.web.InternationalPayTipActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="cn.vcinema.cinema.activity.report.ReportActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="cn.vcinema.cinema.activity.FriendsInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="cn.vcinema.cinema.activity.commentimagepreview.CommentImagePreviewActivity"/>
+        <activity android:name="cn.vcinema.cinema.activity.commentchoosemovie.CommentChooseMovieActivity"/>
+        <activity android:name="cn.vcinema.cinema.activity.commentfilm.IssueCommentActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.vcinema.cinema.imagepicker.ui.ImageGridActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.vcinema.cinema.imagepicker.ui.ImagePreviewDelActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.vcinema.cinema.imagepicker.ui.ImagePreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.vcinema.cinema.imagepicker.ui.ImageCropActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.vcinema.cinema.activity.CommentSearchMovieActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.vcinema.cinema.activity.PersonalCenterSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.vcinema.cinema.notice.activity.MessageActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="cn.vcinema.cinema.notice.activity.ChatActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="cn.vcinema.cinema.notice.activity.MessageCommentMeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.vcinema.cinema.notice.activity.MessageSupportMeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.vcinema.cinema.notice.activity.MessageSystemMsgActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="cn.vcinema.cinema.activity.commentdetail.CommentDetailActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="cn.vcinema.cinema.activity.MyMovieCommentsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.vcinema.cinema.activity.MyFollowActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.vcinema.cinema.activity.MyFansActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.vcinema.cinema.activity.MyLevelActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.vcinema.cinema.activity.MyPumpkinSeedActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.vcinema.cinema.activity.PumpkinSpeedDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.vcinema.cinema.user.activity.MyModalActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.vcinema.cinema.user.activity.MovieLikeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.vcinema.cinema.user.activity.BlackListActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="cn.vcinema.cinema.router.activity.RouterActivity" android:screenOrientation="portrait" android:theme="@style/AliPushTranslate"/>
+        <activity android:name="cn.vcinema.cinema.activity.TestWebActivity"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation|screenSize" android:name="cn.vcinema.cinema.activity.videoplay.HorizontalActivity" android:screenOrientation="sensorLandscape" android:theme="@style/NoTranslucentTheme"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation|screenSize" android:name="cn.vcinema.cinema.activity.videoplay.DiagnosisProcessPlayActivity" android:screenOrientation="sensorLandscape" android:theme="@style/NoTranslucentTheme"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation|screenSize" android:name="cn.vcinema.cinema.activity.renew.Renew461Activity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.vcinema.cinema.activity.category.CategoryScreenActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.vcinema.cinema.activity.history.MovieHistoryActivity2" android:screenOrientation="portrait"/>
+        <activity android:name="cn.vcinema.cinema.activity.collect.MovieCollectActivity2" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation|screenSize" android:name="cn.vcinema.cinema.activity.main.fragment.find.FindListTinyPlayActivity" android:screenOrientation="portrait" android:theme="@style/TranslucentTheme"/>
+        <activity android:name="cn.vcinema.cinema.activity.privacy.PrivacyRulesActivity"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation" android:name="cn.vcinema.cinema.activity.login.MultifunctionActivity" android:screenOrientation="portrait" android:theme="@style/NoTranslucentTheme"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="cn.vcinema.cinema.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <service android:enabled="true" android:exported="true" android:name="com.xiaomi.mipush.sdk.PushMessageHandler"/>
+        <service android:enabled="true" android:name="com.xiaomi.mipush.sdk.MessageHandleService"/>
+        <receiver android:exported="true" android:name="com.alibaba.sdk.android.push.MiPushBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.alibaba.sdk.android.push.HuaWeiReceiver">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REGISTRATION"/>
+                <action android:name="com.huawei.android.push.intent.RECEIVE"/>
+                <action android:name="com.huawei.intent.action.PUSH"/>
+                <action android:name="com.huawei.intent.action.PUSH_STATE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.coloros.mcssdk.PushService">
+            <intent-filter>
+                <action android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.hpplay.sdk.source.mirror.ScreenCastService">
+            <intent-filter android:priority="1000">
+                <action android:name="com.hpplay.sdk.source.mirrorcast.ScreenCastService.ACTION"/>
+            </intent-filter>
+        </service>
+        <activity android:enabled="false" android:icon="@drawable/block_canary_icon" android:label="@string/block_canary_display_activity_label" android:name="com.github.moduth.blockcanary.ui.DisplayActivity" android:taskAffinity="com.github.moduth.blockcanary" android:theme="@style/block_canary_BlockCanary.Base">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="false" android:name="com.alibaba.sdk.android.push.MsgService">
+            <intent-filter>
+                <action android:name="com.alibaba.sdk.android.push.NOTIFY_ACTION"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.alibaba.sdk.android.push.channel.CheckService" android:process=":channel">
+            <intent-filter>
+                <action android:name="com.alibaba.sdk.android.push.CHECK_SERVICE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.taobao.accs.ChannelService" android:process=":channel">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.SERVICE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.taobao.accs.ChannelService$KernelService" android:process=":channel"/>
+        <service android:exported="true" android:name="com.taobao.accs.data.MsgDistributeService">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.RECEIVE"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.taobao.accs.EventReceiver" android:process=":channel">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.taobao.accs.ServiceReceiver" android:process=":channel">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.COMMAND"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.START_FROM_AGOO"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="org.android.agoo.accs.AgooService">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.RECEIVE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.alibaba.sdk.android.push.AliyunPushIntentService">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="true" android:name="com.taobao.agoo.AgooCommondReceiver" android:process=":channel">
+            <intent-filter>
+                <action android:name="cn.vcinema.cinema.intent.action.COMMAND"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.alibaba.sdk.android.push.channel.TaobaoRecvService" android:process=":channel">
+            <intent-filter>
+                <action android:name="org.android.agoo.client.MessageReceiverService"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.taobao.accs.internal.AccsJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":channel"/>
+        <service android:name="com.alibaba.sdk.android.push.channel.KeepChannelService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":channel"/>
+        <receiver android:name="com.alibaba.sdk.android.push.SystemEventReceiver" android:process=":channel">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.liulishuo.filedownloader.services.FileDownloadService$SharedMainProcessService"/>
+        <service android:name="com.liulishuo.filedownloader.services.FileDownloadService$SeparateProcessService" android:process=":filedownloader"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="cn.vcinema.cinema.wxapi.WXEntryActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.umeng.socialize.media.WBShareCallBackActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTask" android:name="com.sina.weibo.sdk.share.WbShareTransActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

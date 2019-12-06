@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imag_guide" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <TextView android:textSize="@dimen/text_12" android:textColor="@color/c_ffffff" android:gravity="center" android:id="@id/txt_jump" android:background="@drawable/guide_start_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/base_dimen_60" android:text="@string/jump_to_next" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

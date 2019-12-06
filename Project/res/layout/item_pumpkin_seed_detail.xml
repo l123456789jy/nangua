@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/base_dimen_22" android:paddingBottom="@dimen/base_dimen_22" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_28" android:layout_marginRight="@dimen/base_dimen_28">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_15" android:textColor="@color/color_efefef" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/text_14" android:textColor="@color/color_9f9f9f" android:id="@id/tv_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_16" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_18" android:textColor="@color/color_f42c2c" android:gravity="center|right" android:id="@id/tv_value" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/base_dimen_22" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/layout_comment" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_28" android:layout_marginTop="@dimen/base_dimen_22" android:layout_marginRight="@dimen/base_dimen_28">
+        <TextView android:textSize="@dimen/text_12" android:textColor="@color/color_9f9f9f" android:ellipsize="end" android:id="@id/tv_comment_description" android:background="@drawable/corners_2dp_333333_bg" android:padding="@dimen/base_dimen_24" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="aaaaaaaaa" android:maxLines="2" />
+        <TextView android:textSize="@dimen/text_12" android:textColor="@color/color_9f9f9f" android:ellipsize="end" android:id="@id/tv_mb" android:background="@drawable/corners_2dp_333333_mb_bg" android:padding="@dimen/base_dimen_24" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+    </RelativeLayout>
+</LinearLayout>

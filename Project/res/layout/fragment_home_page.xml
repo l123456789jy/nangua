@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.common.view.library.PowerfulRecycler.ptr.PowerfulRecyclerView android:id="@id/ptr_container" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <RelativeLayout android:id="@id/rl_search" android:background="@drawable/bottom_shade_layout_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/space_49" android:layout_alignParentTop="true">
+        <TextView android:textSize="@dimen/text_18" android:textColor="@color/color_efefef" android:ellipsize="end" android:gravity="center" android:id="@id/home_title" android:paddingLeft="@dimen/space_50" android:paddingRight="@dimen/space_50" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/homepage_title" android:singleLine="true" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/search_home_btn" android:paddingLeft="@dimen/space_14" android:paddingRight="@dimen/space_13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_search_normal" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

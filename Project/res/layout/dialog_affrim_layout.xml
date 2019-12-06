@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/home_line" android:paddingLeft="@dimen/space_15" android:paddingRight="@dimen/space_15" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_15" android:textColor="@color/license_dark" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_20" android:text="提示" />
+    <TextView android:textSize="@dimen/text_13" android:textColor="@color/color_b0b0b0" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/txt_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_20" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_30" android:layout_marginBottom="@dimen/space_10">
+        <TextView android:textSize="@dimen/text_13" android:textColor="@color/color_b0b0b0" android:gravity="center" android:id="@id/txt_cancel" android:padding="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/text_13" android:textColor="@color/color_f42c2c" android:gravity="center" android:id="@id/txt_continue" android:padding="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/continue_operate" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

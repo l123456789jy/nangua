@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/top_rl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_7">
+        <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:id="@id/more" android:paddingLeft="@dimen/space_10" android:paddingTop="@dimen/space_16" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/space_14">
+            <TextView android:textColor="@color/text_dark" android:id="@id/txt_more" android:paddingLeft="10.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more" style="@style/size_6c_10" />
+            <ImageView android:id="@id/img_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_4" android:src="@drawable/icon_more" />
+        </LinearLayout>
+        <TextView android:textColor="@color/color_efefef" android:ellipsize="end" android:id="@id/title" android:paddingTop="@dimen/space_12" android:paddingRight="@dimen/base_dimen_100" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" style="@style/size_ef_15" />
+        <ImageView android:layout_gravity="center|right" android:id="@id/his_coll_img_right" android:visibility="gone" android:layout_width="@dimen/base_dimen_14" android:layout_height="@dimen/base_dimen_22" android:layout_marginTop="@dimen/space_6" android:layout_marginRight="@dimen/space_7" android:src="@drawable/home_right_icon" />
+    </FrameLayout>
+    <cn.vcinema.cinema.view.CustomClassifyRecyclerView android:id="@id/viewpager" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4" android:layout_marginBottom="@dimen/space_7" />
+    <View android:id="@id/lineView" android:background="@color/home_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/home_movie_left_space" />
+</LinearLayout>

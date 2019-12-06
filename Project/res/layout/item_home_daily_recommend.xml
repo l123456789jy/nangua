@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/base_dimen_12" android:layout_width="@dimen/base_dimen_210" android:layout_height="@dimen/base_dimen_246"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/item_circle_home_daily_recommend" android:background="@drawable/shape_circle_home_daily" android:layout_width="@dimen/base_dimen_198" android:layout_height="@dimen/base_dimen_198" />
+    <ImageView android:id="@id/item_image_home_daily_recommend" android:layout_width="@dimen/base_dimen_192" android:layout_height="@dimen/base_dimen_192" android:layout_marginLeft="@dimen/base_dimen_4" android:layout_marginTop="@dimen/base_dimen_4" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/item_name_home_daily_recommend" android:layout_width="@dimen/base_dimen_192" android:layout_height="@dimen/base_dimen_96" android:layout_marginLeft="@dimen/base_dimen_4" android:layout_marginTop="@dimen/base_dimen_148" android:scaleType="centerInside" android:layout_centerHorizontal="true" />
+</RelativeLayout>

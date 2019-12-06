@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background" android:drawable="@drawable/ratingbar_nor_icon" />
+    <item android:id="@android:id/secondaryProgress" android:drawable="@drawable/ratingbar_nor_icon" />
+    <item android:id="@android:id/progress" android:drawable="@drawable/ratingbar_pre_icon" />
+</layer-list>

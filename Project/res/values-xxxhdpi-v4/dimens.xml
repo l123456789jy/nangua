@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Classify_movie_top_space">15.0dip</dimen>
+    <dimen name="home_movie_left_space">10.0dip</dimen>
+    <dimen name="tab_bar_height">50.0dip</dimen>
+    <dimen name="cover_pic_height">236.6dip</dimen>
+    <dimen name="detail_back_padding">5.0dip</dimen>
+    <dimen name="find_tag_height">42.0dip</dimen>
+    <dimen name="find_tag_horizantal_space">13.0dip</dimen>
+    <dimen name="find_tag_width">101.29999dip</dimen>
+    <dimen name="list_pic_height">148.0dip</dimen>
+    <dimen name="list_pic_width">101.0dip</dimen>
+    <dimen name="player_bottom">5.0dip</dimen>
+    <dimen name="ratingbar_height">90.0px</dimen>
+    <dimen name="scroll_list_height">190.29999dip</dimen>
+    <dimen name="scroll_list_margin_left">14.0dip</dimen>
+    <dimen name="user_center_height">56.0dip</dimen>
+    <dimen name="user_header">238.0dip</dimen>
+    <dimen name="user_top_margin">50.69998dip</dimen>
+    <dimen name="top_add_pic_height">16.0dip</dimen>
+    <dimen name="top_add_pic_width">73.0dip</dimen>
+</resources>

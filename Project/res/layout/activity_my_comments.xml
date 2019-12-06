@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:background="@color/color_222222" android:paddingLeft="@dimen/base_dimen_30" android:paddingRight="@dimen/base_dimen_30" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_60">
+        <TextView android:textSize="@dimen/text_15" android:textColor="@color/color_efefef" android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="@dimen/base_dimen_40" android:text="@string/comment" />
+        <TextView android:textSize="@dimen/text_11" android:textColor="@color/color_9f9f9f" android:gravity="bottom" android:id="@id/tv_comment_number" android:layout_width="wrap_content" android:layout_height="@dimen/base_dimen_40" android:layout_marginLeft="@dimen/base_dimen_10" />
+    </LinearLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

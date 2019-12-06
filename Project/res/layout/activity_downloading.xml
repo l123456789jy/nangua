@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/top_bar" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_redact" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <View android:background="@color/color_333333" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:textSize="@dimen/text_14" android:textColor="@color/license_dark" android:gravity="center" android:id="@id/txt_allchoice" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/all_choice" android:layout_weight="1.0" />
+                    <View android:background="@color/color_333333" android:layout_width="1.0px" android:layout_height="40.0dip" />
+                    <TextView android:textSize="@dimen/text_14" android:textColor="@color/color_444444" android:gravity="center" android:id="@id/txt_delete" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/delete" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_download_control" android:background="@drawable/layout_clicklistener_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <View android:background="@color/color_333333" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/img_download_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_all_pause" />
+                    <TextView android:textSize="@dimen/text_14" android:textColor="@color/color_b0b0b0" android:id="@id/txt_download_remind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_10" android:text="@string/all_pause_download" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/downloadListview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ll_bottom" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </RelativeLayout>
+</LinearLayout>

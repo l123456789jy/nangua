@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/psLayout" android:background="@color/colorBlack" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/layout_top" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <RelativeLayout android:id="@id/layout_back" android:layout_width="40.0dip" android:layout_height="50.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_btn_selector" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/white_color" android:ellipsize="end" android:id="@id/tv_video_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200.0dip" android:maxLines="1" android:layout_toRightOf="@id/layout_back" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/color_efefef" android:gravity="center" android:id="@id/tv_error" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginRight="20.0dip" android:text="@string/projectioning_screen_error" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <com.sina.sinavideo.sdk.widgets.VDVideoControlProScreenView android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_top" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/img_tv_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_project_screen_tv" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white_color" android:ellipsize="end" android:id="@id/tv_connect_wifi_name" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200.0dip" android:text="" android:maxLines="1" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/img_tip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffdbdbdb" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_tip_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="正在启动" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/layout_center_control" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="56.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <TextView android:textSize="16.0sp" android:textColor="#ffefefef" android:gravity="center" android:id="@id/tv_left" android:background="@drawable/left_circle_selector" android:layout_width="122.0dip" android:layout_height="40.0dip" android:layout_marginRight="30.0dip" android:text="@string/change_device_projection_screen" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffefefef" android:gravity="center" android:id="@id/tv_right" android:background="@drawable/right_circle_selector" android:layout_width="122.0dip" android:layout_height="40.0dip" android:text="@string/exit_projection_screen" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_bottom_control" android:paddingRight="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/img_play" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/icon_pause_normal" android:scaleType="center" />
+            <ImageView android:id="@id/img_next_episode" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/icon_next_episode" />
+            <SeekBar android:id="@id/seekbar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxHeight="@dimen/controller_bottom_seekbar_maxHeight" android:progressDrawable="@drawable/play_seekbar_color_bg" android:minHeight="@dimen/controller_bottom_seekbar_minHeight" android:thumb="@drawable/play_ctrl_sound_ball" android:thumbOffset="0.0dip" android:layout_weight="1.0" />
+            <TextView android:textSize="9.0sp" android:textColor="#ffb0b0b0" android:id="@id/tv_play_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:text="00:00:00/00:00:00" android:lines="1" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/home_title" android:gravity="center" android:id="@id/tv_change_stream" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/home_title" android:id="@id/tv_change_series" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/choice_teleplayepisode" />
+        </LinearLayout>
+        <TextView android:textSize="11.0sp" android:textColor="#ff6c6c6c" android:gravity="center" android:id="@id/tv_service_phone" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/customer_service_phone" android:layout_alignParentBottom="true" />
+        <RelativeLayout android:id="@id/layout_volume" android:layout_width="wrap_content" android:layout_height="80.0dip" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/img_volume_add" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/volume_add_icon" />
+            <ImageView android:id="@id/img_volume_reduce" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/volume_reduce_icon" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

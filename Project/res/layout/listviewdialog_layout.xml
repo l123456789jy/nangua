@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#e1000000" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center" android:id="@id/txt_title" android:background="#e1000000" android:paddingTop="@dimen/base_dimen_28" android:paddingBottom="@dimen/base_dimen_28" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/projection_screen_model1" style="@style/size_6c_13" />
+        <ImageView android:id="@id/img_refresh" android:padding="@dimen/space_14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/refresh_device_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:background="@color/color_2c2c2c" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/space_14" android:layout_marginRight="@dimen/space_14" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v7.widget.RecyclerView android:id="@id/proscreen_listview" android:background="#e1000000" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_progress" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:padding="@dimen/base_dimen_26" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateDrawable="@drawable/ani_progressbar_loading_img" style="@style/CustomProgressStyle" />
+                <TextView android:background="@color/color_2c2c2c" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/space_14" android:layout_marginRight="@dimen/space_14" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_no_device" android:paddingTop="@dimen/base_dimen_26" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="center" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/no_wifi_devices" style="@style/size_ef_14" />
+                <TextView android:gravity="center" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/base_dimen_26" android:text="@string/no_wifi_devices_reminder" style="@style/size_ef_11" />
+                <TextView android:background="@color/color_2c2c2c" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/space_14" android:layout_marginRight="@dimen/space_14" />
+            </LinearLayout>
+            <TextView android:gravity="center" android:paddingTop="@dimen/base_dimen_28" android:paddingBottom="@dimen/base_dimen_28" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/projection_screen_model2" style="@style/size_6c_13" />
+            <TextView android:background="@color/color_2c2c2c" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/space_14" android:layout_marginRight="@dimen/space_14" />
+            <android.support.v7.widget.RecyclerView android:id="@id/dialog_listview" android:background="#e1000000" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/progressBar2" android:padding="@dimen/base_dimen_26" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateDrawable="@drawable/ani_progressbar_loading_img" style="@style/CustomProgressStyle" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_account_reminder" android:padding="@dimen/base_dimen_26" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/no_devices" style="@style/size_ef_14" />
+                <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/no_devices_reminder" style="@style/size_ef_11" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_bb000000" android:paddingLeft="@dimen/space_54" android:paddingRight="@dimen/space_54" android:paddingBottom="@dimen/space_25" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <TextView android:textColor="@color/color_666666" android:gravity="center" android:id="@id/textView4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_14" android:text="@string/choice_share_platforms" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/wx_friends" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/imageView5" android:layout_width="@dimen/space_44" android:layout_height="@dimen/space_44" android:src="@drawable/img_activity_share_wo_pyq" />
+            <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_f6f6f6" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_15" android:text="@string/circle_of_friends" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_weixin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/imageView4" android:layout_width="@dimen/space_44" android:layout_height="@dimen/space_44" android:src="@drawable/img_activity_share_wo_wx" />
+            <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_f6f6f6" android:gravity="center" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_15" android:text="@string/weixin" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_sina" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/imageView6" android:layout_width="@dimen/space_44" android:layout_height="@dimen/space_44" android:src="@drawable/img_activity_share_wo_sina" />
+            <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_f6f6f6" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_15" android:text="@string/weibo" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_collect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_width="@dimen/space_44" android:layout_height="@dimen/space_44" android:src="@drawable/icon_share_wx_collect" />
+            <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_f6f6f6" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_15" android:text="@string/chat_collect" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/img_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_25" android:src="@drawable/img_close_activity_window" />
+</LinearLayout>

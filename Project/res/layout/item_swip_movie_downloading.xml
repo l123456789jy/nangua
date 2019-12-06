@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.vcinema.cinema.view.SwipeMenuView android:orientation="vertical" android:background="@color/color_333333" android:paddingBottom="@dimen/space_1" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.common.view.library.ripple.RippleLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_content" android:background="@color/main_color" android:paddingLeft="@dimen/space_14" android:paddingTop="@dimen/space_14" android:paddingBottom="@dimen/space_14" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/cb_delete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_14" android:button="@null" android:src="@drawable/checkbox_selector" />
+            <FrameLayout android:id="@id/fl_download" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/movie_image" android:background="@color/main_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/horizontal_movie_background" android:scaleType="fitXY" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_shade" android:background="@color/translucence" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/img_download_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cache_download_icon" />
+                    <TextView android:textSize="@dimen/text_12" android:textColor="@color/license_dark" android:id="@id/txt_download_remind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_10" android:text="@string/cache_downloading" />
+                </LinearLayout>
+            </FrameLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/base_dimen_28" android:paddingRight="@dimen/base_dimen_28" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/text_15" android:textColor="@color/license_dark" android:ellipsize="end" android:id="@id/txt_movie_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+                <TextView android:textSize="@dimen/text_12" android:textColor="@color/color_6c6c6c" android:id="@id/txt_season_and_series" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_8" />
+                <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ProgressBar android:id="@id/pb_download" android:layout_width="fill_parent" android:layout_height="2.0dip" android:max="100" android:progress="0" android:progressDrawable="@drawable/play_seekbar_background" style="?android:attr/progressBarStyleHorizontal" />
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_10">
+                        <TextView android:textSize="@dimen/text_9" android:textColor="@color/text_dark" android:id="@id/txt_movie_size" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="@dimen/text_9" android:textColor="@color/text_dark" android:id="@id/txt_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.common.view.library.ripple.RippleLayout>
+    <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/txt_delete" android:background="#fff42c2c" android:layout_width="80.0dip" android:layout_height="fill_parent" android:text="@string/delete" style="@style/normal_size" />
+</cn.vcinema.cinema.view.SwipeMenuView>

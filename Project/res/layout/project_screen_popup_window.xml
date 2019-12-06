@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/color_f21c1c1c" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/layout_left" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.flyco.tablayout.SlidingTabLayout android:id="@id/tab_layout" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_96" app:tl_indicator_color="@color/transparent" app:tl_indicator_height="@dimen/base_dimen_6" app:tl_indicator_width="@dimen/base_dimen_120" app:tl_tab_space_equal="true" app:tl_textSelectColor="@color/color_f42c2c" app:tl_textUnselectColor="@color/color_6c6c6c" app:tl_textsize="@dimen/text_15" />
+        <android.support.v4.view.ViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tab_layout" />
+        <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/tv_project_screen_guide" android:background="@drawable/corners_3dp_pumpkin_red_bg" android:layout_width="wrap_content" android:layout_height="@dimen/base_dimen_56" android:layout_marginRight="@dimen/base_dimen_40" android:layout_marginBottom="@dimen/base_dimen_40" android:minWidth="@dimen/base_dimen_168" android:text="@string/project_screen_guide" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/text_15" android:textColor="@color/white" android:gravity="center_vertical" android:background="@color/color_f2222222" android:paddingLeft="@dimen/base_dimen_40" android:paddingRight="@dimen/base_dimen_40" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_96" android:text="@string/tv_projection_screen_guide" />
+        <RelativeLayout android:id="@id/img_close" android:layout_width="@dimen/base_dimen_80" android:layout_height="@dimen/base_dimen_96" android:layout_alignParentRight="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_project_screen_close" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <WebView android:id="@id/webView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/img_close" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_12" android:textColor="@color/color_f42c2c" android:gravity="center" android:id="@id/text_popup_delete_tip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_56" android:text="@string/delete_comment_tip" />
+    <View android:background="@color/black" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_2" />
+    <TextView android:textSize="@dimen/text_15" android:textColor="@color/color_efefef" android:gravity="center" android:id="@id/text_sure" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_88" />
+    <View android:background="@color/black" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_2" />
+    <TextView android:textSize="@dimen/text_15" android:textColor="@color/color_efefef" android:gravity="center" android:id="@id/text_cancle" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_88" />
+</LinearLayout>

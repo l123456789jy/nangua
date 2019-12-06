@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/main_color" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sina.sinavideo.sdk.VDVideoView android:id="@id/video" android:background="@color/main_color" android:layout_width="fill_parent" android:layout_height="237.0dip" app:layerAttrs="@array/sv_videoview_layers2" />
+    <ScrollView android:id="@id/scrollView" android:background="@color/main_color" android:focusable="true" android:focusableInTouchMode="true" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_below="@id/video">
+        <LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_5">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_14" android:layout_marginTop="@dimen/space_13" android:layout_marginRight="@dimen/space_14">
+                <TextView android:textColor="@color/white_color" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" style="@style/header_size" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_14" android:layout_marginRight="@dimen/space_7">
+                <TextView android:textColor="@color/tab_select" android:id="@id/area" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/title_size" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_5" android:src="@drawable/icon_spot" android:contentDescription="@string/app_name" />
+                <TextView android:textColor="@color/tab_select" android:id="@id/year" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_5" style="@style/title_size" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/expend_btn" android:padding="@dimen/space_7" android:paddingLeft="@dimen/base_dimen_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_extend_btn_packup" android:contentDescription="@string/app_name" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_invisilable" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_14" android:layout_marginTop="@dimen/space_2" android:layout_marginRight="@dimen/space_14">
+                <TextView android:textColor="@color/meta_main" android:ellipsize="end" android:id="@id/director" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" style="@style/title_size" />
+                <TextView android:textColor="@color/meta_main" android:ellipsize="end" android:id="@id/actor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4" android:lines="1" style="@style/title_size" />
+                <TextView android:textColor="@color/meta_main" android:id="@id/txt_introduce" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4" android:text="@string/introduction" style="@style/title_size" />
+                <TextView android:textColor="@color/meta_intro" android:id="@id/introduction_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4" android:lineSpacingExtra="@dimen/space_6" style="@style/detail_size" />
+            </LinearLayout>
+            <View android:id="@id/teleplay_line" android:background="@color/color_252525" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/space_14" android:layout_marginTop="@dimen/space_15" android:layout_marginRight="@dimen/space_14" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_teleplay_episode_count" android:background="@color/main_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_3">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_14" android:layout_marginTop="@dimen/space_15" android:layout_marginRight="@dimen/space_14">
+                    <TextView android:textSize="@dimen/text_15" android:textColor="@color/meta_main" android:id="@id/txt_teleplay_episode_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/text_11" android:textColor="@color/color_6e6e6e" android:gravity="bottom" android:id="@id/txt_more_episode" android:paddingLeft="@dimen/space_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <android.support.v7.widget.RecyclerView android:id="@id/teleplay_recyclerview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_22" />
+            </LinearLayout>
+            <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_14" android:layout_marginTop="6.0dip" android:layout_marginRight="@dimen/space_4">
+                <ImageView android:id="@id/img_download" android:padding="@dimen/space_10" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/download_btn_seletor" android:contentDescription="@string/app_name" />
+                <ImageView android:id="@id/collect_btn" android:padding="@dimen/space_10" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_7" android:src="@drawable/icon_fav_normal" android:contentDescription="@string/app_name" />
+                <ImageView android:id="@id/share_btn" android:padding="@dimen/space_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_7" android:src="@drawable/share_btn" android:contentDescription="@string/app_name" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_tags" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_20">
+                <View android:background="@color/color_252525" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_marginLeft="@dimen/space_14" android:layout_marginTop="@dimen/space_6" android:layout_marginRight="@dimen/space_14" />
+                <TextView android:textColor="@color/meta_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_14" android:layout_marginTop="@dimen/space_13" android:text="@string/tags_recommendation" style="@style/title_size" />
+                <android.support.v7.widget.RecyclerView android:id="@id/tags_recyclerview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_17" />
+            </LinearLayout>
+            <View android:background="@color/color_252525" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_marginLeft="@dimen/space_14" android:layout_marginTop="@dimen/space_6" android:layout_marginRight="@dimen/space_14" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_recommend" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_20">
+                <TextView android:textColor="@color/meta_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_14" android:layout_marginTop="@dimen/space_13" android:text="@string/related_recommendation" style="@style/title_size" />
+                <android.support.v7.widget.RecyclerView android:id="@id/recommend_recyclerview" android:paddingRight="@dimen/space_13" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@id/ll_no_net" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/video">
+        <include android:id="@id/ll_no_data" android:visibility="visible" layout="@layout/no_network_layout" />
+    </LinearLayout>
+</RelativeLayout>

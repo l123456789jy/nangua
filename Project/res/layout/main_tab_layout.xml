@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/top_bar_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/realtabcontent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:background="@color/home_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <cn.vcinema.cinema.view.CustomFragmentTabHost android:id="@android:id/tabhost" android:background="@color/top_bar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/tab_bar_height" android:layout_marginTop="1.0dip">
+        <FrameLayout android:id="@android:id/tabcontent" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="0.0dip" android:layout_weight="0.0" />
+    </cn.vcinema.cinema.view.CustomFragmentTabHost>
+</LinearLayout>

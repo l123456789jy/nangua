@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_98"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/color_222222" android:paddingLeft="@dimen/base_dimen_28" android:paddingRight="@dimen/base_dimen_28" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_98" android:layout_alignParentBottom="true">
+        <EditText android:textSize="@dimen/text_15" android:textColor="@color/color_9f9f9f" android:textColorHint="@color/color_666666" android:id="@id/edit_comment_content" android:background="@color/color_333333" android:paddingLeft="@dimen/base_dimen_24" android:paddingRight="@dimen/base_dimen_24" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/base_dimen_8" android:minHeight="@dimen/base_dimen_64" android:layout_weight="1.0" android:textCursorDrawable="@drawable/color_cursor" />
+        <Button android:textSize="@dimen/text_15" android:textColor="@color/color_9f9f9f" android:id="@id/send_comment" android:background="@color/color_333333" android:layout_width="@dimen/base_dimen_104" android:layout_height="@dimen/base_dimen_64" android:text="@string/send_comment_response" />
+    </LinearLayout>
+</RelativeLayout>

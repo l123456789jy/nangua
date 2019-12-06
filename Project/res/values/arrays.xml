@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="empty_only_horizon">
+        <item>@array/empty_sv_videoview_layer_controllayer2</item>
+    </array>
+    <array name="empty_sv_videoview_layer_controllayer2">
+        <item>@null</item>
+        <item>@layout/empty_simple_ui_control_layer_horizon</item>
+    </array>
+    <string-array name="feedback_lables">
+        <item>棒棒哒</item>
+        <item>内容少</item>
+        <item>无法接收验证码</item>
+        <item>画面恐怖</item>
+        <item>页面设计不美观</item>
+        <item>页面加载慢</item>
+        <item>播放卡顿</item>
+    </string-array>
+    <array name="only_horizon">
+        <item>@array/sv_videoview_layer_controllayer2</item>
+    </array>
+    <array name="only_portrait">
+        <item>@array/sv_videoview_layer_controllayer</item>
+    </array>
+    <array name="simple_short_video_ui_control_layer">
+        <item>@layout/short_video_ver_layer</item>
+        <item>@layout/short_video_horizon_layer</item>
+    </array>
+    <array name="simple_ui_layer_control_layer">
+        <item>@layout/simple_ui_control_layer</item>
+        <item>@layout/simple_ui_control_layer_horizon</item>
+    </array>
+    <array name="splendid_short_video_layers">
+        <item>@array/simple_short_video_ui_control_layer</item>
+    </array>
+    <array name="sv_videoview_layer_controllayer">
+        <item>@layout/simple_ui_control_layer</item>
+        <item>@null</item>
+    </array>
+    <array name="sv_videoview_layer_controllayer2">
+        <item>@null</item>
+        <item>@layout/simple_ui_control_layer_horizon</item>
+    </array>
+    <array name="sv_videoview_layers2">
+        <item>@array/simple_ui_layer_control_layer</item>
+    </array>
+    <array name="test_play_layout">
+        <item>@layout/activity_test_play_layout</item>
+    </array>
+</resources>

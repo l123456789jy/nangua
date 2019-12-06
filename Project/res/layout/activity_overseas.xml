@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/overseas_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#80080002" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_218" android:layout_marginBottom="@dimen/space_40" android:src="@drawable/logo_about" />
+        <TextView android:textSize="@dimen/text_15" android:textColor="@color/color_efefef" android:gravity="center" android:id="@id/textView5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/overseas_reminder1" />
+        <TextView android:textSize="@dimen/text_15" android:textColor="@color/color_efefef" android:gravity="center" android:id="@id/textView6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_14" android:text="@string/overseas_reminder2" />
+        <RelativeLayout android:gravity="bottom|center" android:orientation="vertical" android:paddingBottom="@dimen/base_dimen_100" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_wechat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <TextView android:textSize="@dimen/text_13" android:textColor="@color/color_e6e6e6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/overseas_service_wechat" />
+                <TextView android:textSize="@dimen/text_13" android:textColor="@color/color_9f9f9f" android:id="@id/txt_wechat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_16" android:text="@string/vcinema_wechat_acccount" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_20" android:layout_below="@id/ll_wechat" android:layout_alignLeft="@id/ll_wechat">
+                <TextView android:textSize="@dimen/text_13" android:textColor="@color/color_e6e6e6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/overseas_service_email" />
+                <TextView android:textSize="@dimen/text_13" android:textColor="@color/color_9f9f9f" android:id="@id/txt_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_16" android:text="@string/cinema_email" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_20" android:layout_below="@id/ll_email" android:layout_alignLeft="@id/ll_email">
+                <TextView android:textSize="@dimen/text_13" android:textColor="@color/color_e6e6e6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/overseas_service_tencent" />
+                <TextView android:textSize="@dimen/text_13" android:textColor="@color/color_9f9f9f" android:id="@id/txt_tencent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_30" android:text="@string/qq_tencent" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

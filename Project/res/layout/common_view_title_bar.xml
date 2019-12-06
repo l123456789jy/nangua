@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bottom_shade_layout_bg" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_98"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_left" android:layout_width="@dimen/base_dimen_98" android:layout_height="@dimen/base_dimen_98">
+        <ImageView android:id="@id/img_left_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_32" android:src="@drawable/back_btn_selector" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/text_18" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/tv_title_" android:paddingLeft="@dimen/base_dimen_40" android:paddingRight="@dimen/base_dimen_40" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" android:maxLines="1" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:id="@id/layout_right" android:layout_width="wrap_content" android:layout_height="@dimen/base_dimen_98" android:minWidth="@dimen/base_dimen_100" android:layout_alignParentRight="true">
+        <TextView android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/tv_right" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/base_dimen_20" android:text="" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/img_right_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

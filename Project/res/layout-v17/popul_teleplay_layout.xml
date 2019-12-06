@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/color_222222" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ll_memory">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_90">
+            <TextView android:textSize="@dimen/text_14" android:textColor="@color/color_cccccc" android:gravity="center" android:id="@id/dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/choice_teleplay_episode" android:layout_centerVertical="true" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_close" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                <ImageView android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/icon_close_popou_btn_selector" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_rate" android:paddingLeft="@dimen/space_15" android:paddingRight="@dimen/space_30" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/ll_close" android:layout_toRightOf="@id/dialog_title" />
+        </RelativeLayout>
+        <View android:background="@color/color_333333" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginRight="2.0dip" />
+        <android.support.v7.widget.RecyclerView android:id="@id/teleplay_episode_recyclerview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_memory" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/rl_download_show_memory" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_20" android:layout_centerHorizontal="true">
+            <ProgressBar android:id="@id/download_memory_progressBar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:max="100" android:progress="0" android:progressDrawable="@drawable/memory_show_progress_bg" style="?android:attr/progressBarStyleHorizontal" />
+            <TextView android:textSize="@dimen/text_8" android:textColor="@color/login_disabled_text" android:gravity="center" android:id="@id/txt_download_memory_remind" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+        <View android:background="@color/color_333333" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_cache_movie" android:padding="@dimen/space_15" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/imageView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_5" android:layout_marginRight="@dimen/base_dimen_5" android:src="@drawable/icon_file" />
+                    <TextView android:textSize="@dimen/text_9" android:textColor="@color/color_efefef" android:gravity="center" android:layout_gravity="right" android:id="@id/txt_cache_counts" android:background="@drawable/icon_cache_num" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_15" />
+                </FrameLayout>
+                <TextView android:textSize="@dimen/text_12" android:textColor="@color/color_9c9c9c" android:gravity="center" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/space_10" android:text="@string/my_cache_file" />
+            </LinearLayout>
+            <View android:background="@color/color_333333" android:layout_width="1.0px" android:layout_height="44.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" />
+            <TextView android:textSize="@dimen/text_10" android:textColor="@color/color_444444" android:gravity="center" android:id="@id/txt_memory" android:padding="@dimen/space_15" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/available_memory" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/text_12" android:textColor="@color/color_9c9c9c" android:gravity="center" android:id="@id/download_all" android:padding="@dimen/space_15" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/video_download_all" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

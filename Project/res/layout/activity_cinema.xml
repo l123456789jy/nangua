@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fg_content" android:background="@color/main_color" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/empty_view" android:visibility="gone" layout="@layout/no_network_layout" />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_14" android:textColor="@color/color_efefef" android:gravity="center" android:id="@id/mobile_play_message" android:background="@drawable/shape_mobile_play_toast" android:paddingLeft="@dimen/base_dimen_50" android:paddingTop="@dimen/base_dimen_25" android:paddingRight="@dimen/base_dimen_50" android:paddingBottom="@dimen/base_dimen_25" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

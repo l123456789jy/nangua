@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/detainment_dialog_shape" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_15" android:textColor="@color/color_dbdbdb" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_14" android:text="@string/reminder_title" />
+    <TextView android:textSize="@dimen/text_13" android:textColor="@color/color_b0b0b0" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/txt_content" android:paddingLeft="@dimen/space_20" android:paddingRight="@dimen/space_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_15" android:text="@string/detainment_dialog_msg" />
+    <View android:background="@color/color_222222" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_2" android:layout_marginTop="@dimen/space_15" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_100">
+        <TextView android:textSize="@dimen/text_15" android:textColor="@color/color_b0b0b0" android:gravity="center" android:id="@id/txt_cancel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/cancel" android:layout_weight="1.0" />
+        <View android:id="@id/line" android:background="@color/color_222222" android:layout_width="@dimen/base_dimen_2" android:layout_height="@dimen/base_dimen_60" android:layout_marginTop="@dimen/space_5" />
+        <TextView android:textSize="@dimen/text_15" android:textColor="@color/color_f42c2c" android:gravity="center" android:id="@id/txt_continue" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/logout_tip" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

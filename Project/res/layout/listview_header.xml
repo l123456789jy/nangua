@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/listview_header_content" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/listview_header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="100.0dip" android:layout_centerInParent="true">
+            <TextView android:textColor="#ff666666" android:id="@id/refresh_status_textview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/listview_header_hint_normal" />
+            <LinearLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                <TextView android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/listview_header_last_time" />
+                <TextView android:textSize="12.0sp" android:id="@id/last_refresh_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.common.view.library.precyclerview.view.SimpleViewSwitcher android:id="@id/listview_header_progressbar" android:visibility="invisible" android:layout_width="100.0dip" android:layout_height="40.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

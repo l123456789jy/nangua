@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/base_dimen_28" android:paddingRight="@dimen/base_dimen_28" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img_user_header" android:layout_width="@dimen/base_dimen_88" android:layout_height="@dimen/base_dimen_88" />
+        <TextView android:textSize="@dimen/text_14" android:textColor="@color/color_efefef" android:id="@id/tv_title" android:background="@drawable/corners_2dp_222222_bg" android:padding="@dimen/base_dimen_24" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_24" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_10" android:textColor="@color/color_9f9f9f" android:gravity="right" android:id="@id/tv_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_24" android:layout_marginTop="@dimen/base_dimen_4" android:layout_marginRight="@dimen/base_dimen_24" android:layout_marginBottom="@dimen/base_dimen_24" />
+</LinearLayout>

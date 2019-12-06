@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_222222" android:paddingBottom="@dimen/base_dimen_24" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_360"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:CircleTimeView="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/view1" android:background="#00000000" android:layout_width="1.0px" android:layout_height="1.0px" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_view2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/base_dimen_48" android:layout_toLeftOf="@id/view1">
+        <cn.vcinema.cinema.view.CircleTimeView android:id="@id/surplus_hour" android:layout_width="@dimen/base_dimen_232" android:layout_height="@dimen/base_dimen_232" CircleTimeView:circle_choose_color="#fff42c2c" CircleTimeView:circle_default_color="#ff3e3e3e" />
+        <TextView android:textSize="@dimen/text_14" android:textColor="#ffefefef" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_32" android:text="观影时长" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_48" android:layout_toRightOf="@id/view1">
+        <cn.vcinema.cinema.view.CircleTimeView android:id="@id/surplus_day" android:layout_width="@dimen/base_dimen_232" android:layout_height="@dimen/base_dimen_232" CircleTimeView:circle_choose_color="#ff3bb3ff" CircleTimeView:circle_default_color="#ff3e3e3e" />
+        <TextView android:textSize="@dimen/text_14" android:textColor="#ffefefef" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_32" android:text="登录天数" />
+    </LinearLayout>
+</RelativeLayout>

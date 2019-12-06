@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="click_to_restart">点击重试</string>
+    <string name="no_url">播放地址无效</string>
+    <string name="replay">重播</string>
+    <string name="tips_not_wifi">您当前正在使用移动网络，继续播放将消耗流量</string>
+    <string name="tips_not_wifi_cancel">停止播放</string>
+    <string name="tips_not_wifi_confirm">继续播放</string>
+    <string name="video_loading_failed">视频加载失败</string>
+    <string name="srl_component_falsify" formatted="false">"%s 虚假区域
+代表运行时拖动的高度【%.1fdp】 
+而不会显示任何东西"</string>
+    <string name="srl_content_empty">SmartRefreshLayout中没有找到内容视图。您是否忘记在xml布局文件中添加？</string>
+    <string name="text_empty">还没有数据呢！</string>
+    <string name="text_retry">获取数据失败，点击重试！</string>
+</resources>

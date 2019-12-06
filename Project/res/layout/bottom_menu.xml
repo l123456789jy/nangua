@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_shader" android:background="@color/color_222222" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/space_1" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/top_shade_layout_bg" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_98">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_0" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/img_0" android:layout_width="@dimen/base_dimen_44" android:layout_height="@dimen/base_dimen_44" android:layout_marginTop="@dimen/base_dimen_12" android:src="@drawable/tab_home_check" android:scaleType="center" />
+            <TextView android:textSize="@dimen/text_10" android:textColor="@color/tab_select" android:gravity="center" android:id="@id/tv_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_6" android:text="@string/homepage" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/img_1" android:layout_width="@dimen/base_dimen_44" android:layout_height="@dimen/base_dimen_44" android:layout_marginTop="@dimen/base_dimen_12" android:src="@drawable/tab_rank_uncheck" android:scaleType="center" />
+            <TextView android:textSize="@dimen/text_10" android:textColor="@color/color_9f9f9f" android:gravity="center" android:id="@id/tv_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_6" android:text="@string/classify" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/img_2" android:layout_width="@dimen/base_dimen_44" android:layout_height="@dimen/base_dimen_44" android:layout_marginTop="@dimen/base_dimen_12" android:src="@drawable/icon_tab_comment_normal" />
+            <TextView android:textSize="@dimen/text_10" android:textColor="@color/color_9f9f9f" android:gravity="center" android:id="@id/tv_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_6" android:text="@string/comment" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_3" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/img_3" android:layout_width="@dimen/base_dimen_44" android:layout_height="@dimen/base_dimen_44" android:layout_marginTop="@dimen/base_dimen_12" android:src="@drawable/tab_find_uncheck" android:scaleType="center" />
+            <TextView android:textSize="@dimen/text_10" android:textColor="@color/color_9f9f9f" android:gravity="center" android:id="@id/tv_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_6" android:text="@string/find" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_4" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="@dimen/base_dimen_44" android:layout_height="@dimen/base_dimen_44" android:layout_marginTop="@dimen/base_dimen_12">
+                <ImageView android:id="@id/img_4" android:layout_width="@dimen/base_dimen_44" android:layout_height="@dimen/base_dimen_44" android:src="@drawable/tab_self_uncheck" android:scaleType="center" android:layout_centerInParent="true" />
+                <TextView android:id="@id/tv_red_dot_4" android:background="@drawable/corners_circle_red_bg" android:visibility="invisible" android:layout_width="@dimen/base_dimen_10" android:layout_height="@dimen/base_dimen_10" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/text_10" android:textColor="@color/color_9f9f9f" android:gravity="center" android:id="@id/tv_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_6" android:text="@string/my_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

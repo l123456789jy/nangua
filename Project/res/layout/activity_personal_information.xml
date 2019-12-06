@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/top_bar" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_update_head" android:background="@drawable/layout_clicklistener_bg" android:paddingLeft="@dimen/space_14" android:paddingRight="@dimen/space_14" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_110" android:layout_marginTop="@dimen/base_dimen_12">
+        <TextView android:ellipsize="end" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_14" android:text="@string/update_head" android:lines="1" android:layout_toLeftOf="@id/ll_uer_head" android:layout_centerVertical="true" style="@style/size_ef_14" />
+        <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:id="@id/ll_uer_head" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/img_head" android:layout_width="@dimen/base_dimen_68" android:layout_height="@dimen/base_dimen_68" android:src="@drawable/userphoto_login" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_14" android:src="@drawable/arrow_right_icon" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/color_222222" android:paddingLeft="@dimen/space_14" android:paddingRight="@dimen/space_14" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_14">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/layout_clicklistener_bg" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_110">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_nickname" style="@style/size_ef_14" />
+            <EditText android:textSize="@dimen/text_14" android:textColor="@color/color_dbdbdb" android:textColorHint="@color/color_444444" android:gravity="center_vertical" android:id="@id/et_nickname" android:background="@color/color_222222" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/base_dimen_16" android:hint="@string/nickname_reminder" android:ems="10" android:maxLength="10" android:layout_weight="1.0" android:inputType="textPersonName" android:textCursorDrawable="@null" />
+        </LinearLayout>
+        <View android:background="@color/color_2c2c2c" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_2" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/layout_clicklistener_bg" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_110">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_gender" style="@style/size_ef_14" />
+            <TextView android:textSize="@dimen/text_14" android:textColor="@color/color_dbdbdb" android:textColorHint="@color/color_444444" android:gravity="center_vertical" android:id="@id/txt_gender" android:background="@color/color_222222" android:longClickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/base_dimen_16" android:hint="@string/gender_reminder" android:ems="10" android:layout_weight="1.0" android:inputType="textPersonName" />
+        </LinearLayout>
+        <View android:background="@color/color_2c2c2c" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_2" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/layout_clicklistener_bg" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_110">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_birthday" style="@style/size_ef_14" />
+            <TextView android:textSize="@dimen/text_14" android:textColor="@color/color_dbdbdb" android:textColorHint="@color/color_444444" android:gravity="center_vertical" android:id="@id/txt_birthday" android:background="@color/color_222222" android:longClickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/base_dimen_16" android:hint="@string/birthday_reminder" android:ems="10" android:layout_weight="1.0" android:inputType="textPersonName" android:textIsSelectable="false" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/color_222222" android:paddingLeft="@dimen/space_14" android:paddingRight="@dimen/space_14" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_14">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/layout_clicklistener_bg" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_110">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_phone" style="@style/size_ef_14" />
+            <TextView android:gravity="center_vertical" android:id="@id/txt_phone" android:longClickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/base_dimen_16" android:ems="10" android:layout_weight="1.0" android:inputType="textPersonName" style="@style/size_6c_14" />
+        </LinearLayout>
+        <View android:background="@color/color_2c2c2c" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_2" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/layout_clicklistener_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_110">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_location" style="@style/size_ef_14" />
+            <TextView android:textColorHint="@color/color_444444" android:gravity="center_vertical" android:id="@id/txt_location" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/base_dimen_16" android:hint="@string/no_get_location" android:ems="10" android:layout_weight="1.0" android:inputType="textPersonName" style="@style/size_6c_14" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

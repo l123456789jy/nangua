@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.common.view.library.croping.CropImageView android:id="@id/cropview" android:background="@color/color_translucent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/imagewatch_lin" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/imagewatch_lin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/img_watch_bar" android:background="@drawable/cropimg_bottom_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="12.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/img_watch_cancel" android:background="@drawable/cropimg_cancel" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="65.0dip" android:layout_height="40.0dip" android:layout_marginLeft="6.0dip" android:text="@string/exit_cancel" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cropimg_moveandatt" android:layout_centerInParent="true" />
+            <Button android:textSize="12.0sp" android:textColor="@color/color_white" android:gravity="center" android:id="@id/img_watch_ok" android:background="@drawable/cropimg_select" android:layout_width="65.0dip" android:layout_height="40.0dip" android:layout_marginRight="6.0dip" android:text="@string/exit_sure" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

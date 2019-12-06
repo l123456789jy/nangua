@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/tab_color" android:layout_width="fill_parent" android:layout_height="@dimen/space_48">
+        <cn.vcinema.cinema.view.ClearEditText android:textColor="@color/c_ffffff" android:textColorHint="@color/color_444444" android:id="@id/search_edit" android:background="@drawable/shallow_red_round_lin" android:paddingLeft="@dimen/space_14" android:layout_width="wrap_content" android:layout_height="@dimen/space_31" android:layout_marginLeft="@dimen/space_14" android:layout_marginRight="@dimen/space_14" android:hint="@string/search_hint_reminder" android:singleLine="true" android:drawableLeft="@drawable/search_img" android:drawableRight="@drawable/edit_clear_img" android:drawablePadding="10.0dip" android:layout_weight="12.0" android:layout_centerVertical="true" android:inputType="textAutoComplete|textNoSuggestions" android:imeOptions="actionSearch" android:textCursorDrawable="@null" style="@style/normal_size" />
+        <TextView android:textColor="@color/c_ffffff" android:id="@id/cancel_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_14" android:text="@string/cancel" android:layout_weight="0.0" android:layout_centerVertical="true" style="@style/normal_size" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_search_nothing" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_14" android:layout_marginTop="@dimen/base_dimen_34" android:layout_marginRight="@dimen/space_14" android:layout_marginBottom="@dimen/base_dimen_34">
+            <TextView android:id="@id/txt_submit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/video_detail_search_no_result" style="@style/size_6c_14" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                <ImageView android:id="@id/img_heart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wish_list_nor" />
+                <TextView android:id="@id/txt_submit_moview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_10" android:button="@null" android:text="@string/want_watch_movie" style="@style/size_db_14" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@color/color_222222" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_2" android:layout_marginLeft="@dimen/space_14" android:layout_marginRight="@dimen/space_14" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/recyclerview_entry" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:id="@id/searchHistoryTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_history" />
+    <cn.vcinema.cinema.view.SearchHistoryViewGroup android:id="@id/searchHistoryViewGroup" android:background="@color/color_9f9f9f" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_280" />
+    <android.support.design.widget.TabLayout android:id="@id/tablayout_search" android:background="@color/color_222222" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_88" android:layout_below="@id/searchHistoryViewGroupf" app:tabTextColor="@color/color_efefef" app:tabIndicatorHeight="0.0dip" app:tabSelectedTextColor="@color/tab_select" />
+    <android.support.v4.view.ViewPager android:id="@id/vp_search" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_below="@id/tablayout_search" />
+    <android.support.v7.widget.RecyclerView android:id="@id/recyclerview_search" android:paddingLeft="@dimen/base_dimen_28" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

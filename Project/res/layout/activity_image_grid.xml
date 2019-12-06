@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/content" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/top_bar" layout="@layout/include_top_bar" />
+    <RelativeLayout android:background="#ff111111" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.RecyclerView android:id="@id/recycler" android:paddingLeft="2.0dip" android:paddingTop="2.0dip" android:paddingRight="2.0dip" android:paddingBottom="50.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/footer_bar" android:background="@color/ip_color_primary" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentBottom="true">
+            <RelativeLayout android:id="@id/ll_dir" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerVertical="true">
+                <TextView android:textSize="16.0sp" android:textColor="#ffcfcfcf" android:ellipsize="end" android:id="@id/tv_dir" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ip_all_images" android:maxLines="1" android:includeFontPadding="false" android:layout_centerVertical="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginBottom="2.0dip" android:src="@drawable/text_indicator" android:layout_toRightOf="@id/tv_dir" android:layout_alignBottom="@id/tv_dir" />
+            </RelativeLayout>
+            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btn_preview" android:background="@null" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="预览(3)" android:layout_alignParentRight="true" android:textAllCaps="false" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

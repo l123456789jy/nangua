@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/base_dimen_28" android:paddingTop="@dimen/base_dimen_16" android:paddingRight="@dimen/base_dimen_28" android:paddingBottom="@dimen/base_dimen_16" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/corners_8dp_222222_bg" android:paddingLeft="@dimen/base_dimen_48" android:paddingTop="@dimen/base_dimen_28" android:paddingRight="@dimen/base_dimen_28" android:paddingBottom="@dimen/base_dimen_28" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <cn.vcinema.cinema.utils.glide.CircleImageView android:layout_gravity="center_vertical" android:id="@id/img_user_header" android:layout_width="@dimen/base_dimen_120" android:layout_height="@dimen/base_dimen_120" />
+                    <TextView android:textColor="@color/color_9f9f9f" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tv_user_name" android:background="@drawable/corners_20dp_333333_bg" android:paddingLeft="@dimen/base_dimen_20" android:paddingRight="@dimen/base_dimen_20" android:layout_width="wrap_content" android:layout_height="@dimen/base_dimen_48" android:layout_marginLeft="@dimen/base_dimen_16" android:layout_marginRight="@dimen/base_dimen_40" android:maxLines="1" android:maxEms="8" android:singleLine="true" />
+                    <RelativeLayout android:layout_width="0.0dip" android:layout_height="@dimen/base_dimen_164" android:layout_marginTop="@dimen/base_dimen_28" android:layout_weight="1.0">
+                        <RelativeLayout android:id="@id/layout_right" android:layout_width="@dimen/base_dimen_164" android:layout_height="@dimen/base_dimen_164" android:layout_alignParentRight="true">
+                            <ImageView android:layout_width="@dimen/base_dimen_164" android:layout_height="@dimen/base_dimen_164" android:src="@drawable/img_medal_total_bg" />
+                            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_68" android:layout_centerHorizontal="true">
+                                <TextView android:textSize="@dimen/text_20" android:textColor="@color/color_3a2100" android:id="@id/tv_medal_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                                <TextView android:layout_gravity="top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="枚" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <android.support.v7.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/base_dimen_16" />
+                <TextView android:textSize="@dimen/text_15" android:textColor="@color/color_efefef" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_48" android:text="@string/medal_rule" />
+                <TextView android:textSize="@dimen/text_14" android:textColor="@color/color_f42c2c" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_24" android:text="@string/medal_rule_how_to_getting" />
+                <TextView android:textSize="@dimen/text_14" android:textColor="@color/color_9f9f9f" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_16" android:text="@string/medal_rule_to_getting" />
+                <TextView android:textSize="@dimen/text_14" android:textColor="@color/color_f42c2c" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_24" android:text="@string/medal_rule_term" />
+                <TextView android:textSize="@dimen/text_14" android:textColor="@color/color_9f9f9f" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_16" android:text="@string/medal_rule_has_term" />
+                <TextView android:textSize="@dimen/text_14" android:textColor="@color/color_9f9f9f" android:gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_100" android:layout_marginTop="@dimen/base_dimen_16" android:text="" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

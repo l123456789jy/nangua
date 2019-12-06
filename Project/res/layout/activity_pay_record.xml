@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/rl_rank_top" layout="@layout/top_bar" />
+    <com.common.view.library.precyclerview.LRecyclerView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <include android:id="@id/empty_view" android:visibility="gone" layout="@layout/no_network_layout" />
+    <RelativeLayout android:id="@id/rl_no_have_payrecord" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/rl_iv" android:layout_width="142.0px" android:layout_height="104.0px" android:src="@drawable/not_have_payrecord" android:layout_centerInParent="true" />
+        <TextView android:textSize="26.0px" android:textColor="@color/color_6c6c6c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0px" android:text="@string/not_have_payrecord" android:layout_below="@id/rl_iv" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

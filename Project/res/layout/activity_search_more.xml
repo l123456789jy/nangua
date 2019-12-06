@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/top_bar" />
+    <android.support.v7.widget.RecyclerView android:id="@id/list" android:paddingRight="@dimen/space_13" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <include android:id="@id/empty_view" android:visibility="gone" layout="@layout/no_network_layout" />
+</LinearLayout>

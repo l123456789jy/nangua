@@ -1,0 +1,24 @@
+<?xml version="0.1" encoding="utf-8"?>
+<litepal>
+    <dbname value="vcinemaph4.db" />
+    <!--数据库名称为litepaldemo，默认以 .db 结尾,如未以此结尾,则自动添加。-->
+    <version value="17" />
+    <!--数据库版本为1,每次数据库发生变动版本号必须+1-->
+    <!--有几张表就在list之间写几个mapping // list标签中的实体类都应该继承LitePalSupport这个类,这个千万别忘记-->
+    <list>
+        <mapping class="com.vcinema.vcinemalibrary.entity.authentication.SessionBean"/>
+        <mapping class="cn.vcinema.cinema.entity.favorite.Favorite"/>
+        <mapping class="cn.vcinema.cinema.moviedownload.entity.VideoDownloadInfo"/>
+        <mapping class="cn.vcinema.cinema.entity.history.History"/>
+        <mapping class="cn.vcinema.cinema.activity.splash.entity.SplashInfo"/>
+        <mapping class="cn.vcinema.cinema.entity.searchhistory.SearchHistory"/>
+        <mapping class="cn.vcinema.cinema.entity.user.UserInfo"/>
+        <!--版本号 16 增加-->
+        <mapping class="cn.vcinema.cinema.entity.renew.RenewCategoryType"/>
+        <mapping class="cn.vcinema.cinema.entity.renew.RenewCategoryDetail"/>
+
+        <mapping class="com.vcinema.vcinemalibrary.entity.B"/>
+    </list>
+    <!--<internal value="data/data/cn.vcinema.cinema/database" />-->
+    <!--storage 定义数据库文件存储的地方,可选 internal(内部) 和 external（外部）, 默认为 internal-->
+</litepal>

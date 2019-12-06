@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <SurfaceView android:layout_gravity="center" android:id="@id/preview_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <cn.vcinema.cinema.zxing.view.ViewfinderView android:id="@id/viewfinder_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <include layout="@layout/top_bar" />
+</FrameLayout>

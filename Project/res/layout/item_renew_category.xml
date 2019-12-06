@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_15" android:textColor="@color/color_bcbbbb" android:gravity="center" android:id="@id/renew_category_name" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_100" />
+    <View android:background="@color/color_2f2f2f" android:layout_width="@dimen/base_dimen_94" android:layout_height="@dimen/base_dimen_2" android:layout_below="@id/renew_category_name" android:layout_centerHorizontal="true" />
+</RelativeLayout>

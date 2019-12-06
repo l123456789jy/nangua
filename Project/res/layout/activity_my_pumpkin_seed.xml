@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:zsr="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@color/main_color" android:paddingBottom="@dimen/base_dimen_80" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@color/color_222222" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_28" android:layout_marginTop="@dimen/base_dimen_28">
+                    <TextView android:textSize="@dimen/text_15" android:textColor="@color/color_D29D4C" android:id="@id/tv_pumpkin_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    <ImageView android:layout_width="@dimen/base_dimen_32" android:layout_height="@dimen/base_dimen_32" android:layout_marginLeft="@dimen/base_dimen_8" android:src="@drawable/icon_pumpkin" android:scaleType="fitXY" />
+                </LinearLayout>
+                <cn.vcinema.cinema.view.BarGraphView android:id="@id/bar_graph_view" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_468" android:layout_marginLeft="@dimen/base_dimen_33" android:layout_marginRight="@dimen/base_dimen_33" android:layout_centerInParent="true" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/rl_pumpkin_seed_detail" android:background="@color/color_222222" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_72" android:layout_marginTop="@dimen/base_dimen_1">
+                <TextView android:textSize="@dimen/text_14" android:textColor="@color/color_9f9f9f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_28" android:text="南瓜籽明细" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/img_arrow" android:layout_width="@dimen/base_dimen_20" android:layout_height="@dimen/base_dimen_28" android:layout_marginRight="@dimen/base_dimen_28" android:src="@drawable/icon_more" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:background="@color/color_222222" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_72" android:layout_marginTop="@dimen/base_dimen_16">
+                <TextView android:id="@id/tv_logo_" android:background="@color/color_f42c2c" android:layout_width="@dimen/base_dimen_8" android:layout_height="@dimen/base_dimen_34" android:layout_marginLeft="@dimen/base_dimen_28" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/text_15" android:textColor="@color/color_f42c2c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_16" android:text="南瓜籽获取" android:layout_toRightOf="@id/tv_logo_" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:id="@id/view_hline_one" android:background="@color/color_1c1c1c" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_2" zsr:layout_constraintTop_toBottomOf="@id/layout_banner" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout" android:background="@color/color_222222" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_188">
+                <TextView android:textSize="@dimen/text_13" android:textColor="@color/color_9f9f9f" android:gravity="center" android:layout_gravity="center" android:id="@id/watch_movie" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/watch_movie" android:drawableTop="@drawable/icon_watch_movie" android:drawablePadding="@dimen/base_dimen_14" android:layout_weight="1.0" />
+                <View android:background="@color/color_1c1c1c" android:layout_width="@dimen/base_dimen_2" android:layout_height="wrap_content" zsr:layout_constraintTop_toBottomOf="@id/textView10" />
+                <TextView android:textSize="@dimen/text_13" android:textColor="@color/color_9f9f9f" android:gravity="center" android:layout_gravity="center" android:id="@id/my_vip" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/myvipname" android:drawableTop="@drawable/icon_vip_yellow" android:drawablePadding="@dimen/base_dimen_14" android:layout_weight="1.0" />
+                <View android:background="@color/color_1c1c1c" android:layout_width="@dimen/base_dimen_2" android:layout_height="wrap_content" zsr:layout_constraintTop_toBottomOf="@id/textView10" />
+                <TextView android:textSize="@dimen/text_13" android:textColor="@color/color_9f9f9f" android:gravity="center" android:layout_gravity="center" android:id="@id/movie_comment" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/movie_comments" android:drawableTop="@drawable/icon_movie_comment_red" android:drawablePadding="@dimen/base_dimen_14" android:layout_weight="1.0" />
+                <View android:background="@color/color_1c1c1c" android:visibility="gone" android:layout_width="@dimen/base_dimen_2" android:layout_height="wrap_content" zsr:layout_constraintTop_toBottomOf="@id/textView10" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/layout_banner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/space_106" android:layout_marginTop="@dimen/space_8" zsr:layout_constraintTop_toBottomOf="@id/ll_comment_info">
+                <com.zhengsr.viewpagerlib.view.BannerViewPager android:id="@id/banner_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" zsr:banner_isloop="true" zsr:banner_looptime="5000" zsr:banner_switchtime="600" zsr:banner_loop_max_count="2" />
+                <com.zhengsr.viewpagerlib.indicator.NormalIndicator android:gravity="center" android:id="@id/bottom_scale_layout" android:layout_width="wrap_content" android:layout_height="@dimen/space_2" android:layout_marginRight="@dimen/space_14" android:layout_marginBottom="@dimen/space_5" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" zsr:normal_selector="@drawable/mine_banner_indicator_bg" />
+            </RelativeLayout>
+            <RelativeLayout android:background="@color/color_222222" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_72" android:layout_marginTop="@dimen/base_dimen_16">
+                <TextView android:id="@id/tv_logo" android:background="@color/color_f42c2c" android:layout_width="@dimen/base_dimen_8" android:layout_height="@dimen/base_dimen_34" android:layout_marginLeft="@dimen/base_dimen_28" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/text_15" android:textColor="@color/color_f42c2c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_16" android:text="南瓜籽兑换" android:layout_toRightOf="@id/tv_logo" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:background="@color/color_222222" android:paddingTop="@dimen/base_dimen_20" android:paddingBottom="@dimen/base_dimen_20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_1">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_score_shopping_mall" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                        <TextView android:textSize="@dimen/text_24" android:textColor="@color/color_efefef" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_20" android:text="@string/market_building" android:drawablePadding="@dimen/base_dimen_14" />
+                        <TextView android:textSize="@dimen/text_15" android:textColor="@color/color_9f9f9f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_14" android:text="@string/will_coming" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

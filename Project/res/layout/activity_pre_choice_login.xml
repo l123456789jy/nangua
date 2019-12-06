@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_1c1c1c" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/image_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <android.support.v4.view.ViewPager android:id="@id/multifunction_ViewPager" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <requestFocus />
+    </android.support.v4.view.ViewPager>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/multifunction_point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="45.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/base_dimen_160" android:layout_alignParentBottom="true">
+        <Button android:textSize="@dimen/text_13" android:textColor="@color/white" android:id="@id/btn_free_trial" android:background="@drawable/button_circular_selector" android:layout_width="@dimen/base_dimen_260" android:layout_height="@dimen/base_dimen_100" android:text="@string/pre_login_button_free_trial" android:layout_above="@id/btn_login" />
+        <RelativeLayout android:id="@id/rl_login" android:background="@drawable/button_circular_selector" android:layout_width="@dimen/base_dimen_260" android:layout_height="@dimen/base_dimen_100" android:layout_marginLeft="@dimen/base_dimen_58">
+            <TextView android:textSize="@dimen/text_13" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pre_login_button" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

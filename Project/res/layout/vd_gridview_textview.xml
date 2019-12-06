@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.sinavideo.sdk.widgets.playlist.VDVideoPlayListGridItemTextView android:textSize="@dimen/controller_title_title_text_size" android:textColor="#ffd1d1d1" android:ellipsize="end" android:gravity="center" android:id="@id/text" android:layout_width="50.0dip" android:layout_height="35.0dip" android:layout_alignParentLeft="true" android:layout_centerInParent="true" android:textIsSelectable="false" />
+</RelativeLayout>

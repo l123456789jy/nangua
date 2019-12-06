@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_home_moview" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/fl_content" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/imageView" android:layout_width="0.0dip" android:layout_height="0.0dip" android:src="@drawable/picdefault" android:scaleType="centerCrop" app:layout_constraintDimensionRatio="82:119" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" />
+            <RelativeLayout android:background="@drawable/movie_score_bottom_shade_layout_bg" android:layout_width="fill_parent" android:layout_height="32.0dip" app:layout_constraintBottom_toBottomOf="parent">
+                <TextView android:textSize="@dimen/text_pumpkin_movie_score_flag_size" android:textColor="@color/color_pumpkin_seed_movie_score_flag_text" android:gravity="center" android:id="@id/tv_pumpkin_movie_score_flag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimens_pumpkin_movie_score_flag_bg_margin_right" android:layout_marginBottom="@dimen/dimens_pumpkin_movie_score_flag_bg_margin_bottom" android:text="" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </android.support.constraint.ConstraintLayout>
+        <TextView android:textSize="@dimen/text_pumpkin_vod_flag_size" android:textColor="@color/color_pumpkin_seed_vod_flag_text" android:id="@id/tv_pumpkin_vod_flag" android:background="@drawable/corners_pumpkin_seed_vod_flag_bg" android:paddingLeft="@dimen/dimens_pumpkin_vod_flag_bg_padding_left" android:paddingRight="@dimen/dimens_pumpkin_vod_flag_bg_padding_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_pumpkin_vod_flag_bg_margin_left" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/text_12" android:textColor="@color/home_title" android:ellipsize="end" android:id="@id/textView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_7" android:layout_marginBottom="@dimen/space_3" android:singleLine="true" />
+</LinearLayout>

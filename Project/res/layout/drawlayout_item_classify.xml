@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_classify" android:background="@color/colorBlack" android:layout_width="@dimen/base_dimen_295" android:layout_height="@dimen/base_dimen_200"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:id="@id/drawlayout_item_cardview" android:layout_width="@dimen/base_dimen_295" android:layout_height="@dimen/base_dimen_200" app:cardBackgroundColor="@color/colorBlack">
+        <ImageView android:layout_gravity="center" android:id="@id/drawlayout_item_img" android:background="@color/catagory_drawlayout_item_bg" android:layout_width="@dimen/base_dimen_288" android:layout_height="@dimen/base_dimen_188" android:scaleType="fitXY" />
+        <ImageView android:layout_gravity="center" android:background="@color/catagory_drawlayout_item_bg" android:layout_width="@dimen/base_dimen_288" android:layout_height="@dimen/base_dimen_188" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/text_14" android:textColor="@color/color_efefef" android:ellipsize="end" android:layout_gravity="center" android:id="@id/drawlayout_item_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

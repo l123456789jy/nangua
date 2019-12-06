@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout android:background="@drawable/corners_pumpkin_vod_bg" android:layout_width="280.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="280:113.5" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <android.support.constraint.ConstraintLayout android:id="@id/layout_top" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintDimensionRatio="280:60">
+            <TextView android:textSize="@dimen/text_19" android:textColor="@color/color_b0b0b0" android:gravity="center" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+        <View android:id="@id/lin_hor" android:background="@color/color_333333" android:layout_width="fill_parent" android:layout_height="1.0dip" app:layout_constraintTop_toBottomOf="@id/layout_top" />
+        <android.support.constraint.ConstraintLayout android:layout_width="280.0dip" android:layout_height="0.0dip" app:layout_constraintDimensionRatio="280:52.5" app:layout_constraintTop_toBottomOf="@id/lin_hor">
+            <TextView android:textSize="@dimen/text_16" android:textColor="@color/color_b0b0b0" android:gravity="center" android:id="@id/tv_enter" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/call" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

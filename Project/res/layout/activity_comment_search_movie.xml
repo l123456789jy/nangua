@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll1" android:background="@color/tab_color" android:layout_width="fill_parent" android:layout_height="@dimen/space_48">
+        <cn.vcinema.cinema.view.ClearEditText android:textColor="@color/c_ffffff" android:textColorHint="@color/color_444444" android:id="@id/search_edit" android:background="@drawable/shallow_red_round_lin" android:paddingLeft="@dimen/space_14" android:paddingRight="@dimen/base_dimen_24" android:layout_width="wrap_content" android:layout_height="@dimen/space_33" android:layout_marginLeft="@dimen/space_14" android:layout_marginRight="@dimen/space_14" android:hint="@string/comment_search_hint_reminder" android:singleLine="true" android:drawableLeft="@drawable/search_img" android:drawableRight="@drawable/edit_clear_img" android:drawablePadding="10.0dip" android:layout_weight="12.0" android:layout_centerVertical="true" android:inputType="textAutoComplete|textNoSuggestions" android:imeOptions="actionSearch" android:textCursorDrawable="@null" style="@style/normal_size" />
+        <TextView android:textSize="@dimen/text_17" android:textColor="@color/color_9f9f9f" android:id="@id/cancel_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_14" android:text="@string/cancel" android:layout_weight="0.0" android:layout_centerVertical="true" style="@style/normal_size" />
+    </LinearLayout>
+    <com.common.view.library.precyclerview.LRecyclerView android:id="@id/comment_search_movie_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/space_12" android:layout_below="@id/ll1" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/ll1">
+        <ImageView android:layout_gravity="center" android:id="@id/empty_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/no_comment_search_movie" />
+        <TextView android:textColor="@color/color_777777" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_comment_search_movie" />
+    </LinearLayout>
+</RelativeLayout>

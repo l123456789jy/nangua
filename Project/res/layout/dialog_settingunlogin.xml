@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/detainment_dialog_shape" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="38.0px" android:textColor="@color/color_b0b0b0" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="70.0px" android:text="@string/reminder_title" />
+    <TextView android:textSize="28.0px" android:textColor="@color/color_b0b0b0" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/txt_content" android:paddingLeft="40.0px" android:paddingRight="40.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="45.0px" android:text="@string/setting_dialog_msg" />
+    <View android:id="@id/view_line_hor" android:background="@color/color_333333" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_marginTop="70.0px" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_bottom" android:layout_width="fill_parent" android:layout_height="105.0px">
+        <TextView android:textSize="32.0px" android:textColor="@color/color_b0b0b0" android:gravity="center" android:id="@id/txt_cancel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/cancel" android:layout_weight="1.0" />
+        <View android:id="@id/line" android:background="@color/color_333333" android:layout_width="2.0px" android:layout_height="105.0px" />
+        <TextView android:textSize="32.0px" android:textColor="@color/color_b0b0b0" android:gravity="center" android:id="@id/txt_continue" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/logout_tip" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

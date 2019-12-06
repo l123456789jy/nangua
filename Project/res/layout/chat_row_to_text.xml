@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/base_dimen_140" android:paddingRight="@dimen/base_dimen_28" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.vcinema.cinema.utils.glide.CircleImageView android:id="@id/img_user_header" android:layout_width="@dimen/base_dimen_88" android:layout_height="@dimen/base_dimen_88" android:layout_alignParentRight="true" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/img_chat_to_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/base_dimen_16" android:minWidth="@dimen/base_dimen_160" android:minHeight="@dimen/base_dimen_88" android:layout_toLeftOf="@id/img_user_header">
+        <TextView android:textSize="@dimen/text_15" android:textColor="@color/color_efefef" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_11" android:textColor="@color/color_a79788" android:gravity="center|right" android:id="@id/tv_time" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+            <ImageView android:id="@id/img_send_status" android:visibility="visible" android:layout_width="@dimen/base_dimen_14" android:layout_height="@dimen/base_dimen_14" android:layout_marginLeft="@dimen/base_dimen_6" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

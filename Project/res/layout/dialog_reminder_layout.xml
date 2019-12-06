@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/home_line" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_sharpness" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_14" android:textColor="@color/color_9f9f9f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_14" android:layout_marginTop="@dimen/space_14" android:text="@string/choice_teleplay_episode_download_sharpness" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_rate" android:padding="@dimen/space_25" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ll_cache" android:padding="@dimen/space_27" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/checkbox_select" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/text_14" android:textColor="@color/license_dark" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_10" android:text="@string/video_add_cache" />
+    </LinearLayout>
+    <View android:background="@color/color_333333" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_cache_movie" android:padding="@dimen/space_15" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/imageView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_5" android:layout_marginRight="@dimen/base_dimen_5" android:src="@drawable/icon_file" />
+                <TextView android:textSize="@dimen/text_9" android:textColor="@color/color_efefef" android:gravity="center" android:layout_gravity="right" android:id="@id/txt_cache_counts" android:background="@drawable/icon_cache_num" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_15" />
+            </FrameLayout>
+            <TextView android:textSize="@dimen/text_12" android:textColor="@color/color_9c9c9c" android:gravity="center" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/space_10" android:text="@string/my_cache_file" />
+        </LinearLayout>
+        <View android:background="@color/color_333333" android:layout_width="1.0px" android:layout_height="44.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" />
+        <TextView android:textSize="@dimen/text_10" android:textColor="@color/color_444444" android:gravity="center" android:id="@id/txt_memory" android:padding="@dimen/space_15" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/available_memory" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

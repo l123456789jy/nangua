@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_18" android:textColor="@color/color_D29D4C" android:layout_gravity="center_horizontal" android:id="@id/tv_pumpkin_number" android:paddingTop="@dimen/base_dimen_56" android:paddingBottom="@dimen/base_dimen_56" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/icon_pumpkin" android:drawablePadding="@dimen/base_dimen_8" />
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <android.support.v7.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/text_14" android:textColor="@color/color_9f9f9f" android:gravity="center_horizontal" android:background="@color/color_1c1c1c" android:paddingTop="@dimen/base_dimen_80" android:paddingBottom="@dimen/base_dimen_80" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/only_show_recently_three_years_data" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

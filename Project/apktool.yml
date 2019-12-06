@@ -1,0 +1,221 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: project.apk
+compressionType: false
+doNotCompress:
+- arsc
+- mp3
+- res/drawable-hdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png
+- png
+- res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png
+- res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png
+- res/drawable-hdpi-v4/abc_cab_background_top_mtrl_alpha.9.png
+- res/drawable-hdpi-v4/abc_list_divider_mtrl_alpha.9.png
+- res/drawable-hdpi-v4/abc_list_focused_holo.9.png
+- res/drawable-hdpi-v4/abc_list_longpressed_holo.9.png
+- res/drawable-hdpi-v4/abc_list_pressed_holo_dark.9.png
+- res/drawable-hdpi-v4/abc_list_pressed_holo_light.9.png
+- res/drawable-hdpi-v4/abc_list_selector_disabled_holo_dark.9.png
+- res/drawable-hdpi-v4/abc_list_selector_disabled_holo_light.9.png
+- res/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png
+- res/drawable-hdpi-v4/abc_popup_background_mtrl_mult.9.png
+- res/drawable-hdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png
+- res/drawable-hdpi-v4/abc_scrubber_track_mtrl_alpha.9.png
+- res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+- res/drawable-hdpi-v4/abc_switch_track_mtrl_alpha.9.png
+- res/drawable-hdpi-v4/abc_tab_indicator_mtrl_alpha.9.png
+- res/drawable-hdpi-v4/abc_textfield_activated_mtrl_alpha.9.png
+- res/drawable-hdpi-v4/abc_textfield_default_mtrl_alpha.9.png
+- res/drawable-hdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png
+- res/drawable-hdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png
+- res/drawable-hdpi-v4/actionsheet_bottom_normal.9.png
+- res/drawable-hdpi-v4/actionsheet_bottom_pressed.9.png
+- res/drawable-hdpi-v4/actionsheet_middle_normal.9.png
+- res/drawable-hdpi-v4/actionsheet_middle_pressed.9.png
+- res/drawable-hdpi-v4/actionsheet_single_normal.9.png
+- res/drawable-hdpi-v4/actionsheet_single_pressed.9.png
+- res/drawable-hdpi-v4/actionsheet_top_normal.9.png
+- res/drawable-hdpi-v4/actionsheet_top_pressed.9.png
+- res/drawable-hdpi-v4/author_loading_bg.9.png
+- res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png
+- res/drawable-hdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png
+- res/drawable-hdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png
+- res/drawable-hdpi-v4/common_google_signin_btn_text_light_normal_background.9.png
+- res/drawable-hdpi-v4/definition_select_bg.9.png
+- res/drawable-hdpi-v4/dlna_list_bg.9.png
+- res/drawable-hdpi-v4/notification_bg_low_normal.9.png
+- res/drawable-hdpi-v4/notification_bg_low_pressed.9.png
+- res/drawable-hdpi-v4/notification_bg_normal.9.png
+- res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png
+- res/drawable-hdpi-v4/play_ctrl_bottom_bg.9.png
+- res/drawable-hdpi-v4/play_ctrl_title_bg.9.png
+- res/drawable-hdpi-v4/play_seek_flag_bg.9.png
+- res/drawable-hdpi-v4/player_right_panel_bg.9.png
+- res/drawable-ldrtl-hdpi-v17/abc_spinner_mtrl_am_alpha.9.png
+- res/drawable-ldrtl-mdpi-v17/abc_spinner_mtrl_am_alpha.9.png
+- res/drawable-ldrtl-xhdpi-v17/abc_spinner_mtrl_am_alpha.9.png
+- res/drawable-ldrtl-xxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png
+- res/drawable-ldrtl-xxxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png
+- res/drawable-mdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png
+- res/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png
+- res/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png
+- res/drawable-mdpi-v4/abc_cab_background_top_mtrl_alpha.9.png
+- res/drawable-mdpi-v4/abc_list_divider_mtrl_alpha.9.png
+- res/drawable-mdpi-v4/abc_list_focused_holo.9.png
+- res/drawable-mdpi-v4/abc_list_longpressed_holo.9.png
+- res/drawable-mdpi-v4/abc_list_pressed_holo_dark.9.png
+- res/drawable-mdpi-v4/abc_list_pressed_holo_light.9.png
+- res/drawable-mdpi-v4/abc_list_selector_disabled_holo_dark.9.png
+- res/drawable-mdpi-v4/abc_list_selector_disabled_holo_light.9.png
+- res/drawable-mdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png
+- res/drawable-mdpi-v4/abc_popup_background_mtrl_mult.9.png
+- res/drawable-mdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png
+- res/drawable-mdpi-v4/abc_scrubber_track_mtrl_alpha.9.png
+- res/drawable-mdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+- res/drawable-mdpi-v4/abc_switch_track_mtrl_alpha.9.png
+- res/drawable-mdpi-v4/abc_tab_indicator_mtrl_alpha.9.png
+- res/drawable-mdpi-v4/abc_textfield_activated_mtrl_alpha.9.png
+- res/drawable-mdpi-v4/abc_textfield_default_mtrl_alpha.9.png
+- res/drawable-mdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png
+- res/drawable-mdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png
+- res/drawable-mdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png
+- res/drawable-mdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png
+- res/drawable-mdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png
+- res/drawable-mdpi-v4/common_google_signin_btn_text_light_normal_background.9.png
+- res/drawable-mdpi-v4/notification_bg_low_normal.9.png
+- res/drawable-mdpi-v4/notification_bg_low_pressed.9.png
+- res/drawable-mdpi-v4/notification_bg_normal.9.png
+- res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png
+- res/drawable-xhdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png
+- res/drawable-xhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png
+- res/drawable-xhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png
+- res/drawable-xhdpi-v4/abc_cab_background_top_mtrl_alpha.9.png
+- res/drawable-xhdpi-v4/abc_list_divider_mtrl_alpha.9.png
+- res/drawable-xhdpi-v4/abc_list_focused_holo.9.png
+- res/drawable-xhdpi-v4/abc_list_longpressed_holo.9.png
+- res/drawable-xhdpi-v4/abc_list_pressed_holo_dark.9.png
+- res/drawable-xhdpi-v4/abc_list_pressed_holo_light.9.png
+- res/drawable-xhdpi-v4/abc_list_selector_disabled_holo_dark.9.png
+- res/drawable-xhdpi-v4/abc_list_selector_disabled_holo_light.9.png
+- res/drawable-xhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png
+- res/drawable-xhdpi-v4/abc_popup_background_mtrl_mult.9.png
+- res/drawable-xhdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png
+- res/drawable-xhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png
+- res/drawable-xhdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+- res/drawable-xhdpi-v4/abc_switch_track_mtrl_alpha.9.png
+- res/drawable-xhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png
+- res/drawable-xhdpi-v4/abc_textfield_activated_mtrl_alpha.9.png
+- res/drawable-xhdpi-v4/abc_textfield_default_mtrl_alpha.9.png
+- res/drawable-xhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png
+- res/drawable-xhdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png
+- res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png
+- res/drawable-xhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png
+- res/drawable-xhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png
+- res/drawable-xhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png
+- res/drawable-xhdpi-v4/copy.9.png
+- res/drawable-xhdpi-v4/downloading_num_bg.9.png
+- res/drawable-xhdpi-v4/icon_cache_num.9.png
+- res/drawable-xhdpi-v4/jz_clarity_popwindow_bg.9.png
+- res/drawable-xhdpi-v4/notification_bg_low_normal.9.png
+- res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png
+- res/drawable-xhdpi-v4/notification_bg_normal.9.png
+- res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png
+- res/drawable-xxhdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png
+- res/drawable-xxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png
+- res/drawable-xxhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png
+- res/drawable-xxhdpi-v4/abc_cab_background_top_mtrl_alpha.9.png
+- res/drawable-xxhdpi-v4/abc_list_divider_mtrl_alpha.9.png
+- res/drawable-xxhdpi-v4/abc_list_focused_holo.9.png
+- res/drawable-xxhdpi-v4/abc_list_longpressed_holo.9.png
+- res/drawable-xxhdpi-v4/abc_list_pressed_holo_dark.9.png
+- res/drawable-xxhdpi-v4/abc_list_pressed_holo_light.9.png
+- res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_dark.9.png
+- res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_light.9.png
+- res/drawable-xxhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png
+- res/drawable-xxhdpi-v4/abc_popup_background_mtrl_mult.9.png
+- res/drawable-xxhdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png
+- res/drawable-xxhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png
+- res/drawable-xxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+- res/drawable-xxhdpi-v4/abc_switch_track_mtrl_alpha.9.png
+- res/drawable-xxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png
+- res/drawable-xxhdpi-v4/abc_textfield_activated_mtrl_alpha.9.png
+- res/drawable-xxhdpi-v4/abc_textfield_default_mtrl_alpha.9.png
+- res/drawable-xxhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png
+- res/drawable-xxhdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png
+- res/drawable-xxhdpi-v4/advert_picdefault.9.png
+- res/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png
+- res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png
+- res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png
+- res/drawable-xxhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png
+- res/drawable-xxhdpi-v4/controlbar1bg.9.png
+- res/drawable-xxhdpi-v4/downloading_file.9.png
+- res/drawable-xxhdpi-v4/img_chat_from_text.9.png
+- res/drawable-xxhdpi-v4/img_chat_to_text.9.png
+- res/drawable-xxhdpi-v4/img_renew_activity_bg.9.png
+- res/drawable-xxhdpi-v4/img_to_2.9.png
+- res/drawable-xxhdpi-v4/jz_clarity_popwindow_bg.9.png
+- res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png
+- res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png
+- res/drawable-xxxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+- res/drawable-xxxhdpi-v4/abc_switch_track_mtrl_alpha.9.png
+- res/drawable-xxxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png
+- jpg
+- gif
+- res/drawable/image_backdrop_shadow.9.png
+- res/drawable/jz_bottom_bg.9.png
+- res/drawable/jz_title_bg.9.png
+- res/drawable/toast_bg.9.png
+- res/drawable/version_upgrade_dialog_bg.9.png
+- ogg
+- 7z
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '16'
+  targetSdkVersion: '27'
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  BeaconVersion.txt: '8'
+  androidsupportmultidexversion.txt: '8'
+  build-data.properties: '8'
+  bundle.properties: '8'
+  miui_push_version: '8'
+  publicsuffixes.gz: '8'
+  push_version: '8'
+  vicrab-build.properties: '8'
+  com/alibaba/mtl/appmonitor/Transaction.aidl: '8'
+  com/alibaba/mtl/appmonitor/model/Dimension.aidl: '8'
+  com/alibaba/mtl/appmonitor/model/DimensionSet.aidl: '8'
+  com/alibaba/mtl/appmonitor/model/DimensionValueSet.aidl: '8'
+  com/alibaba/mtl/appmonitor/model/Measure.aidl: '8'
+  com/alibaba/mtl/appmonitor/model/MeasureSet.aidl: '8'
+  com/alibaba/mtl/appmonitor/model/MeasureValueSet.aidl: '8'
+  jsr305_annotations/Jsr305_annotations.gwt.xml: '8'
+  org/apache/http/version.properties: '8'
+  org/apache/http/client/version.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/logcat.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_cs.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_de.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_es.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_fr.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_hu.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_it.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_ja.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_ko.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_pl.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_pt_BR.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_ru.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_zh_CN.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_zh_TW.properties: '8'
+  org/eclipse/paho/client/mqttv3/logging/jsr47min.properties: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.4.0
+versionInfo:
+  versionCode: '320'
+  versionName: 4.6.4.4

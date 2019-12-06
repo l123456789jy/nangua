@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_1c1c1c" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <cn.vcinema.cinema.view.CustomCoordinatorLayout android:id="@id/sticky_scroll_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.design.widget.AppBarLayout android:id="@id/appBarLayout" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip" app:layout_behavior="cn.vcinema.cinema.view.behavior.WhlBehavior">
+            <android.support.design.widget.CollapsingToolbarLayout android:id="@id/collapsingLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="55.0dip" app:layout_scrollFlags="exitUntilCollapsed|scroll" app:contentScrim="?colorPrimary" app:titleEnabled="false">
+                <android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <cn.pumpkin.view.PumpkinSmallVideoView android:id="@id/pumpkinSmallVideoView" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintDimensionRatio="16:9" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" />
+                </android.support.constraint.ConstraintLayout>
+            </android.support.design.widget.CollapsingToolbarLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_recommend" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <android.support.design.widget.TabLayout android:id="@id/detail_tablayout" android:layout_width="wrap_content" android:layout_height="wrap_content" app:tabIndicatorHeight="0.0dip" app:tabMode="scrollable" />
+                <View android:background="@color/color_222222" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_2" />
+            </LinearLayout>
+        </android.support.design.widget.AppBarLayout>
+        <android.support.v4.view.ViewPager android:id="@id/viewPager" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </cn.vcinema.cinema.view.CustomCoordinatorLayout>
+</RelativeLayout>

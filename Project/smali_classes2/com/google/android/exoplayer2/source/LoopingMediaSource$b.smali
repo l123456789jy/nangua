@@ -1,0 +1,198 @@
+.class final Lcom/google/android/exoplayer2/source/LoopingMediaSource$b;
+.super Lcom/google/android/exoplayer2/source/a;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/android/exoplayer2/source/LoopingMediaSource;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1a
+    name = "b"
+.end annotation
+
+
+# instance fields
+.field private final a:Lcom/google/android/exoplayer2/Timeline;
+
+.field private final b:I
+
+.field private final c:I
+
+.field private final d:I
+
+
+# direct methods
+.method public constructor <init>(Lcom/google/android/exoplayer2/Timeline;I)V
+    .locals 2
+
+    .line 124
+    new-instance v0, Lcom/google/android/exoplayer2/source/ShuffleOrder$UnshuffledShuffleOrder;
+
+    invoke-direct {v0, p2}, Lcom/google/android/exoplayer2/source/ShuffleOrder$UnshuffledShuffleOrder;-><init>(I)V
+
+    const/4 v1, 0x0
+
+    invoke-direct {p0, v1, v0}, Lcom/google/android/exoplayer2/source/a;-><init>(ZLcom/google/android/exoplayer2/source/ShuffleOrder;)V
+
+    .line 125
+    iput-object p1, p0, Lcom/google/android/exoplayer2/source/LoopingMediaSource$b;->a:Lcom/google/android/exoplayer2/Timeline;
+
+    .line 126
+    invoke-virtual {p1}, Lcom/google/android/exoplayer2/Timeline;->getPeriodCount()I
+
+    move-result v0
+
+    iput v0, p0, Lcom/google/android/exoplayer2/source/LoopingMediaSource$b;->b:I
+
+    .line 127
+    invoke-virtual {p1}, Lcom/google/android/exoplayer2/Timeline;->getWindowCount()I
+
+    move-result p1
+
+    iput p1, p0, Lcom/google/android/exoplayer2/source/LoopingMediaSource$b;->c:I
+
+    .line 128
+    iput p2, p0, Lcom/google/android/exoplayer2/source/LoopingMediaSource$b;->d:I
+
+    .line 129
+    iget p1, p0, Lcom/google/android/exoplayer2/source/LoopingMediaSource$b;->b:I
+
+    if-lez p1, :cond_1
+
+    const p1, 0x7fffffff
+
+    .line 130
+    iget v0, p0, Lcom/google/android/exoplayer2/source/LoopingMediaSource$b;->b:I
+
+    div-int/2addr p1, v0
+
+    if-gt p2, p1, :cond_0
+
+    const/4 v1, 0x1
+
+    :cond_0
+    const-string p1, "LoopingMediaSource contains too many periods"
+
+    invoke-static {v1, p1}, Lcom/google/android/exoplayer2/util/Assertions;->checkState(ZLjava/lang/Object;)V
+
+    :cond_1
+    return-void
+.end method
+
+
+# virtual methods
+.method protected a(I)I
+    .locals 1
+
+    .line 147
+    iget v0, p0, Lcom/google/android/exoplayer2/source/LoopingMediaSource$b;->b:I
+
+    div-int/2addr p1, v0
+
+    return p1
+.end method
+
+.method protected b(I)I
+    .locals 1
+
+    .line 152
+    iget v0, p0, Lcom/google/android/exoplayer2/source/LoopingMediaSource$b;->c:I
+
+    div-int/2addr p1, v0
+
+    return p1
+.end method
+
+.method protected c(Ljava/lang/Object;)I
+    .locals 1
+
+    .line 157
+    instance-of v0, p1, Ljava/lang/Integer;
+
+    if-nez v0, :cond_0
+
+    const/4 p1, -0x1
+
+    return p1
+
+    .line 160
+    :cond_0
+    check-cast p1, Ljava/lang/Integer;
+
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method protected c(I)Lcom/google/android/exoplayer2/Timeline;
+    .locals 0
+
+    .line 165
+    iget-object p1, p0, Lcom/google/android/exoplayer2/source/LoopingMediaSource$b;->a:Lcom/google/android/exoplayer2/Timeline;
+
+    return-object p1
+.end method
+
+.method protected d(I)I
+    .locals 1
+
+    .line 170
+    iget v0, p0, Lcom/google/android/exoplayer2/source/LoopingMediaSource$b;->b:I
+
+    mul-int/2addr p1, v0
+
+    return p1
+.end method
+
+.method protected e(I)I
+    .locals 1
+
+    .line 175
+    iget v0, p0, Lcom/google/android/exoplayer2/source/LoopingMediaSource$b;->c:I
+
+    mul-int/2addr p1, v0
+
+    return p1
+.end method
+
+.method protected f(I)Ljava/lang/Object;
+    .locals 0
+
+    .line 180
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public getPeriodCount()I
+    .locals 2
+
+    .line 142
+    iget v0, p0, Lcom/google/android/exoplayer2/source/LoopingMediaSource$b;->b:I
+
+    iget v1, p0, Lcom/google/android/exoplayer2/source/LoopingMediaSource$b;->d:I
+
+    mul-int/2addr v0, v1
+
+    return v0
+.end method
+
+.method public getWindowCount()I
+    .locals 2
+
+    .line 137
+    iget v0, p0, Lcom/google/android/exoplayer2/source/LoopingMediaSource$b;->c:I
+
+    iget v1, p0, Lcom/google/android/exoplayer2/source/LoopingMediaSource$b;->d:I
+
+    mul-int/2addr v0, v1
+
+    return v0
+.end method

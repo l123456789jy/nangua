@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/recommend_layout_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/recommend_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <ImageView android:background="@drawable/recommend_movie_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/recommend_left_arrow" android:padding="@dimen/base_dimen_40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_btn_selector" />
+        <TextView android:textSize="@dimen/text_25" android:textColor="@color/color_efefef" android:id="@id/txt_recommend_more_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/layout_recommend_more" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/base_dimen_41" android:layout_marginTop="@dimen/base_dimen_98">
+        <TextView android:textSize="@dimen/text_13" android:textColor="@color/color_efefef" android:ellipsize="end" android:id="@id/txt_recommend_more_introduction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_25" android:layout_marginRight="@dimen/base_dimen_454" android:maxLines="4" android:lineSpacingExtra="@dimen/base_dimen_8" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_recommend_collect" android:background="@drawable/button_bg_selector" android:layout_width="@dimen/base_dimen_166" android:layout_height="@dimen/base_dimen_68" android:layout_above="@id/rv_recommend">
+            <ImageView android:id="@id/icon_recommend_collect" android:layout_width="@dimen/base_dimen_27" android:layout_height="@dimen/base_dimen_27" android:src="@drawable/icon_video_detail_collect" android:scaleType="fitXY" />
+            <TextView android:textSize="@dimen/text_14" android:textColor="@color/color_efefef" android:id="@id/txt_recommend_collect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_10" android:text="@string/video_detail_collect" />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/rv_recommend" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_23" android:layout_marginBottom="@dimen/base_dimen_40" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/dialog_recommend_movie_layout" />
+</RelativeLayout>

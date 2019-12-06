@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_content" android:background="@color/color_222222" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="14.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_top" android:layout_width="fill_parent" android:layout_height="76.0px">
+        <TextView android:textSize="28.0px" android:textColor="@color/color_efefef" android:id="@id/tv_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="28.0px" android:layout_centerVertical="true" />
+        <TextView android:textSize="28.0px" android:textColor="@color/color_D29D4C" android:id="@id/tv_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="28.0px" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/view_line" android:background="@color/color_2d2d2d" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_marginLeft="28.0px" android:layout_below="@id/rl_top" />
+    <RelativeLayout android:id="@id/rl_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/view_line">
+        <TextView android:textSize="24.0px" android:textColor="@color/color_888888" android:id="@id/tv_buydate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="28.0px" android:layout_marginTop="24.0px" />
+        <TextView android:textSize="24.0px" android:textColor="@color/color_888888" android:id="@id/tv_order_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="28.0px" android:layout_marginBottom="24.0px" android:layout_below="@id/tv_buydate" android:textIsSelectable="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/img_type" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="28.0px" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

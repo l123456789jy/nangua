@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="right" android:layout_gravity="right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_15" android:textColor="@color/c_ffffff" android:background="@drawable/shape_btn_play_is_carton" android:padding="@dimen/base_dimen_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/play_is_carton" />
+    <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:id="@id/play_normal" android:background="@drawable/shape_btn_play_is_carton" android:padding="@dimen/base_dimen_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_20">
+        <TextView android:textSize="@dimen/text_15" android:textColor="@color/c_ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/play_normal" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_8" android:src="@drawable/play_normal_icon" android:scaleType="centerCrop" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:id="@id/play_carton" android:background="@drawable/shape_btn_play_is_carton" android:padding="@dimen/base_dimen_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_14">
+        <TextView android:textSize="@dimen/text_15" android:textColor="@color/c_ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/play_carton" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_8" android:src="@drawable/play_carton_img" android:scaleType="centerCrop" />
+    </LinearLayout>
+</LinearLayout>

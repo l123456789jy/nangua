@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_28" android:layout_marginTop="@dimen/base_dimen_24" android:layout_marginRight="@dimen/base_dimen_28">
+        <View android:id="@id/response_user_head" android:background="@drawable/shape_circle_home_daily" android:layout_width="@dimen/base_dimen_88" android:layout_height="@dimen/base_dimen_88" />
+        <ImageView android:id="@id/image_response_user_head" android:layout_width="@dimen/base_dimen_80" android:layout_height="@dimen/base_dimen_80" android:layout_marginLeft="@dimen/base_dimen_4" android:layout_marginTop="@dimen/base_dimen_4" android:src="@drawable/userphoto_login" />
+        <TextView android:textSize="@dimen/text_14" android:textColor="@color/color_cccccc" android:id="@id/text_response_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_16" android:text="没有名字的南瓜" android:layout_toRightOf="@id/image_response_user_head" />
+        <TextView android:textSize="@dimen/text_12" android:textColor="@color/color_9f9f9f" android:id="@id/text_response_detail_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/text_response_user_name" android:layout_alignLeft="@id/text_response_user_name" />
+        <ImageView android:id="@id/image_response_more" android:layout_width="@dimen/base_dimen_24" android:layout_height="@dimen/base_dimen_24" android:src="@drawable/icon_comment_more" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <cn.vcinema.cinema.view.LimitLineTextView android:textSize="@dimen/text_14" android:textColor="@color/color_cccccc" android:id="@id/response_comment_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_124" android:layout_marginTop="@dimen/base_dimen_16" android:layout_marginRight="@dimen/base_dimen_28" android:textIsSelectable="true" />
+    <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:id="@id/layout_response_support" android:paddingLeft="@dimen/base_dimen_28" android:paddingTop="@dimen/base_dimen_32" android:paddingRight="@dimen/base_dimen_28" android:paddingBottom="@dimen/base_dimen_20" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/image_response_support" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_comment_no_support" />
+        <TextView android:textSize="@dimen/text_12" android:textColor="@color/color_9f9f9f" android:id="@id/text_response_support_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_16" android:text="@string/detail_support_num" />
+    </LinearLayout>
+    <View android:background="@color/color_222222" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

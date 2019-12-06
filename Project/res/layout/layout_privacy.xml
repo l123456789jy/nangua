@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_2c2c2c" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <WebView android:id="@id/webView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_retry" android:background="@color/color_2c2c2c" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/text_15" android:textColor="@color/color_9f9f9f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="网络未连接，请检查网络后重试" />
+            <TextView android:textColor="@color/color_413c42" android:gravity="center" android:id="@id/tv_retry" android:background="@drawable/corners_2dp_dddddd_bg" android:layout_width="@dimen/base_dimen_160" android:layout_height="@dimen/base_dimen_60" android:layout_marginTop="@dimen/base_dimen_48" android:layout_marginBottom="@dimen/base_dimen_140" android:text="@string/refresh" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:id="@id/layout_allow_privacy" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/img_privacy_check" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/img_privacy_unselect" />
+        <TextView android:textSize="@dimen/text_15" android:textColor="@color/color_f42c2c" android:gravity="center" android:id="@id/tv_privacy" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="7.0dip" android:text="" />
+    </LinearLayout>
+</LinearLayout>

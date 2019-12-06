@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_222222" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:gravity="center" android:id="@id/txt_newest" android:background="@drawable/layout_clicklistener_bg" android:padding="@dimen/space_21" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/newest" style="@style/size_db_14" />
+    <TextView android:background="@color/color_2c2c2c" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/space_14" android:layout_marginRight="@dimen/space_14" />
+    <TextView android:gravity="center" android:id="@id/txt_popular" android:background="@drawable/layout_clicklistener_bg" android:padding="@dimen/space_21" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/popular" style="@style/size_db_14" />
+    <TextView android:background="@color/color_2c2c2c" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/space_14" android:layout_marginRight="@dimen/space_14" />
+    <TextView android:gravity="center" android:id="@id/txt_grade" android:background="@drawable/layout_clicklistener_bg" android:padding="@dimen/space_21" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/grade" style="@style/size_db_14" />
+    <TextView android:background="@color/color_2c2c2c" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/space_14" android:layout_marginRight="@dimen/space_14" />
+    <TextView android:gravity="center" android:id="@id/txt_diablo_index" android:background="@drawable/layout_clicklistener_bg" android:padding="@dimen/space_21" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/diablo_index" style="@style/size_db_14" />
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sina.sinavideo.sdk.VDVideoViewLayer android:id="@id/empty_video_view_layer" android:background="@color/main_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/play_diagnosis_bg" android:background="@drawable/play_diagnosis_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.common.view.library.precyclerview.progressindicator.AVLoadingIndicatorView android:id="@id/empty_video_view_loading" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" app:indicator="BallSpinFadeLoader" app:indicator_color="@color/color_f42c2c" />
+    <ImageView android:id="@id/play_diagnosis_back" android:padding="@dimen/base_dimen_40" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_20" android:src="@drawable/back_btn_selector" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_play_diagnosis_finish" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_183" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/repair_success" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/text_20" android:textColor="@color/color_efefef" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_50" android:text="@string/finish_play_diagnosis" android:lineSpacingExtra="@dimen/base_dimen_25" />
+    </LinearLayout>
+    <LinearLayout android:gravity="right" android:orientation="vertical" android:id="@id/carton_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/text_15" android:textColor="@color/c_ffffff" android:background="@drawable/shape_btn_play_is_carton" android:padding="@dimen/base_dimen_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/play_is_carton" />
+        <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:id="@id/play_normal" android:background="@drawable/shape_btn_play_is_carton" android:padding="@dimen/base_dimen_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_20">
+            <TextView android:textSize="@dimen/text_15" android:textColor="@color/c_ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/play_normal" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_8" android:src="@drawable/play_normal_icon" android:scaleType="centerCrop" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:id="@id/play_carton" android:background="@drawable/shape_btn_play_is_carton" android:padding="@dimen/base_dimen_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_14">
+            <TextView android:textSize="@dimen/text_15" android:textColor="@color/c_ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/play_carton" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_8" android:src="@drawable/play_carton_img" android:scaleType="centerCrop" />
+        </LinearLayout>
+    </LinearLayout>
+</com.sina.sinavideo.sdk.VDVideoViewLayer>

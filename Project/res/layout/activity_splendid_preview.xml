@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.vcinema.cinema.view.TopToBottomFinishLayout android:id="@id/layout_splendid_preview" android:background="@drawable/vertical_full_defult_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.RecyclerView android:id="@id/splendid_preview_recyclerview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/icon_close_splendid_preivew" android:paddingLeft="@dimen/base_dimen_28" android:paddingTop="@dimen/base_dimen_46" android:paddingRight="@dimen/base_dimen_32" android:paddingBottom="@dimen/base_dimen_46" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_splendid_close" android:scaleType="centerCrop" android:layout_alignParentRight="true" />
+    <include android:id="@id/empty_view" android:visibility="gone" layout="@layout/no_network_layout" />
+    <com.common.view.library.precyclerview.progressindicator.AVLoadingIndicatorView android:id="@id/splendid_preview_loading" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" app:indicator="BallSpinFadeLoader" app:indicator_color="@color/color_f42c2c" />
+    <FrameLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_300" android:layout_marginLeft="@dimen/base_dimen_32" android:layout_marginTop="@dimen/base_dimen_17" android:layout_marginRight="@dimen/base_dimen_104">
+        <android.support.v4.view.ViewPager android:id="@id/splendid_viewpager" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_300" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_splendid_voice" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_32" android:layout_marginTop="@dimen/base_dimen_8" android:layout_marginRight="@dimen/base_dimen_70">
+        <ImageView android:id="@id/image_splendid_voice" android:layout_width="@dimen/base_dimen_24" android:layout_height="@dimen/base_dimen_24" android:src="@drawable/icon_voice" android:scaleType="centerCrop" />
+        <SeekBar android:id="@id/splendid_voice_seekBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="@dimen/base_dimen_6" android:progressDrawable="@drawable/prevue_seekbar" android:minHeight="@dimen/base_dimen_6" android:thumb="@null" android:layout_centerInParent="true" />
+    </LinearLayout>
+</cn.vcinema.cinema.view.TopToBottomFinishLayout>

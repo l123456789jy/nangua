@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/top_bar" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/rl_about" android:background="@color/main_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_about_logo" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_40" android:layout_marginBottom="@dimen/space_40" android:src="@drawable/logo_about" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:background="@color/color_222222" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/ll_about_logo">
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_wechat" android:background="@color/color_222222" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="56.0dip">
+                <TextView android:text="@string/vcinema_weixin" android:drawableLeft="@drawable/weixin_icon" android:drawablePadding="@dimen/space_10" android:drawableStart="@drawable/weixin_icon" style="@style/text_style_left" />
+                <TextView android:textSize="@dimen/text_13" android:textColor="@color/color_9f9f9f" android:gravity="center" android:id="@id/wechat_account" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="14.0dip" android:text="@string/vcinema_wechat_acccount" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <View android:background="@color/color_2c2c2c" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" />
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_wechat_Official" android:background="@color/color_222222" android:layout_width="fill_parent" android:layout_height="56.0dip">
+                <TextView android:text="@string/weixin_group" android:drawableLeft="@drawable/weixin_icon" android:drawablePadding="@dimen/space_10" android:drawableStart="@drawable/weixin_icon" style="@style/text_style_left" />
+                <TextView android:textSize="@dimen/text_13" android:textColor="@color/color_9f9f9f" android:gravity="center" android:id="@id/wechat_Official_account" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="14.0dip" android:text="@string/pumpkinmovie" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <View android:background="@color/color_2c2c2c" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" />
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_sina" android:background="@color/color_222222" android:layout_width="fill_parent" android:layout_height="56.0dip">
+                <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/sina_weibo" android:drawableLeft="@drawable/weibo_icon" android:drawablePadding="@dimen/space_10" android:drawableStart="@drawable/weibo_icon" style="@style/text_style_left" />
+                <TextView android:textSize="@dimen/text_13" android:textColor="@color/color_9f9f9f" android:gravity="center" android:id="@id/sina_account" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="14.0dip" android:text="@string/nangua" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <View android:background="@color/color_2c2c2c" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" />
+            <RelativeLayout android:gravity="center_vertical" android:background="@color/color_222222" android:layout_width="fill_parent" android:layout_height="56.0dip">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/custom_service_email" android:drawableLeft="@drawable/email_icon" android:drawablePadding="@dimen/space_10" android:drawableStart="@drawable/email_icon" style="@style/text_style_left" />
+                <TextView android:textSize="@dimen/text_13" android:textColor="@color/color_9f9f9f" android:id="@id/mail_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:text="@string/cinema_email" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <View android:background="@color/color_2c2c2c" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" />
+            <RelativeLayout android:gravity="center_vertical" android:background="@color/color_222222" android:layout_width="fill_parent" android:layout_height="56.0dip">
+                <TextView android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/custom_service_phone" android:drawableLeft="@drawable/phone_icon" android:drawablePadding="@dimen/space_10" android:drawableStart="@drawable/phone_icon" style="@style/text_style_left" />
+                <TextView android:textSize="@dimen/text_13" android:textColor="@color/color_9f9f9f" android:gravity="center" android:id="@id/contact_phone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="14.0dip" android:text="@string/service_phone" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/ll_content" android:layout_alignParentRight="true">
+            <TextView android:textColor="@color/license_dark" android:id="@id/service_term" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/service_term" style="@style/detail_size" />
+            <TextView android:textColor="@color/text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/and" style="@style/detail_size" />
+            <TextView android:textColor="@color/license_dark" android:id="@id/private_policy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/private_policy" style="@style/detail_size" />
+        </LinearLayout>
+        <TextView android:textColor="@color/login_disabled" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_30" android:text="@string/copyright" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/detail_size" />
+    </RelativeLayout>
+    <include layout="@layout/fragment_url_info" />
+</LinearLayout>

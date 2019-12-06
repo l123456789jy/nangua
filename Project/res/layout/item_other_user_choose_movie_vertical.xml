@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/top_rl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_7">
+        <TextView android:textColor="@color/color_efefef" android:ellipsize="end" android:id="@id/title" android:paddingTop="@dimen/space_12" android:paddingRight="@dimen/base_dimen_100" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" style="@style/size_ef_15" />
+    </FrameLayout>
+    <cn.vcinema.cinema.view.CustomClassifyRecyclerView android:id="@id/viewpager" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_7" android:layout_marginBottom="@dimen/space_7" />
+    <View android:id="@id/lineView" android:background="@color/home_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/home_movie_left_space" />
+</LinearLayout>

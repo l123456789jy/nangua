@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_28"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fl_content" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/teleplay_episode_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/horizontal_movie_background" android:scaleType="fitXY" />
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/short_video_wifi_icon" />
+    </FrameLayout>
+    <TextView android:id="@id/txt_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_20" android:text="@string/about_me" style="@style/size_ef_12" />
+</LinearLayout>

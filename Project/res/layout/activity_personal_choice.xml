@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:gravity="center" android:id="@id/txt_reminder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_16" android:text="@string/personal_choice_reminder" style="@style/size_ef_14" />
+            <android.support.v7.widget.RecyclerView android:id="@id/recyclerview" android:paddingLeft="@dimen/base_dimen_28" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/base_dimen_34" />
+            <Button android:textColor="@color/color_efefef" android:id="@id/btn_choice" android:background="@drawable/login_btn_bg_disable" android:layout_width="232.69998dip" android:layout_height="43.299988dip" android:layout_marginTop="@dimen/base_dimen_100" android:layout_marginBottom="@dimen/base_dimen_100" android:text="@string/personal_choice_next_text" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

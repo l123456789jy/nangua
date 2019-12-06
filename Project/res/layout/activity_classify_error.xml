@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/error_iv" android:background="@drawable/classify_error_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/left_button" android:paddingLeft="@dimen/space_14" android:paddingTop="@dimen/space_5" android:paddingRight="@dimen/space_20" android:paddingBottom="@dimen/space_5" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_btn_selector" android:layout_centerVertical="true" />
+</android.support.constraint.ConstraintLayout>

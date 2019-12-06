@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_video_repair_success" android:background="@drawable/play_diagnosis_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/repair_success_left_arrow" android:paddingLeft="@dimen/base_dimen_40" android:paddingTop="@dimen/base_dimen_40" android:paddingRight="@dimen/base_dimen_40" android:paddingBottom="@dimen/base_dimen_40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_btn_selector" />
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/base_dimen_88" android:layout_height="@dimen/base_dimen_88" android:layout_marginTop="@dimen/base_dimen_80" android:src="@drawable/repair_success" android:scaleType="fitXY" />
+    <TextView android:textSize="@dimen/text_20" android:textColor="@color/color_efefef" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_50" android:text="@string/video_repair_success" android:lineSpacingExtra="@dimen/base_dimen_28" />
+    <Button android:textSize="@dimen/text_13" android:textColor="@color/color_efefef" android:layout_gravity="center_horizontal" android:id="@id/btn_repair_complete" android:background="@color/play_repair_btn_bg" android:layout_width="@dimen/base_dimen_200" android:layout_height="@dimen/base_dimen_79" android:layout_marginTop="@dimen/base_dimen_120" android:text="@string/video_repair_complete" />
+</LinearLayout>

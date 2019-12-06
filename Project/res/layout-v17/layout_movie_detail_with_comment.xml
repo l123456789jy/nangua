@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <cn.vcinema.cinema.view.CustomCoordinatorLayout android:id="@id/sticky_scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.design.widget.AppBarLayout android:id="@id/appBarLayout" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip" app:layout_behavior="cn.vcinema.cinema.view.behavior.WhlBehavior">
+            <android.support.design.widget.CollapsingToolbarLayout android:id="@id/collapsingLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="55.0dip" app:layout_scrollFlags="exitUntilCollapsed|scroll" app:contentScrim="?colorPrimary" app:titleEnabled="false">
+                <RelativeLayout android:id="@id/layout_sticky_content" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@id/image_poster_blur" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:id="@id/layout_movie_detail_top" android:background="@drawable/shape_movie_detail_poster_gradinet" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/layout_backdrop" android:layout_width="@dimen/base_dimen_286" android:layout_height="@dimen/base_dimen_411" android:layout_marginTop="@dimen/base_dimen_70">
+                                <ImageView android:gravity="center" android:id="@id/image_backdrop" android:background="@drawable/image_backdrop_shadow" android:paddingLeft="@dimen/base_dimen_9" android:paddingRight="@dimen/base_dimen_9" android:paddingBottom="@dimen/base_dimen_20" android:layout_width="@dimen/base_dimen_286" android:layout_height="@dimen/base_dimen_411" android:scaleType="fitXY" />
+                                <TextView android:textSize="@dimen/text_pumpkin_vod_flag_size" android:textColor="@color/color_pumpkin_seed_vod_flag_text" android:id="@id/tv_pumpkin_vod_flag" android:background="@drawable/corners_pumpkin_seed_vod_flag_bg" android:paddingLeft="@dimen/dimens_pumpkin_vod_flag_bg_padding_left" android:paddingRight="@dimen/dimens_pumpkin_vod_flag_bg_padding_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="1.0dip" />
+                                <RelativeLayout android:background="@drawable/movie_score_bottom_shade_layout_bg" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true">
+                                    <TextView android:textSize="@dimen/text_pumpkin_movie_score_flag_size" android:textColor="@color/color_pumpkin_seed_movie_score_flag_text" android:gravity="center" android:id="@id/tv_pumpkin_movie_score_flag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimens_pumpkin_movie_score_flag_bg_margin_right" android:layout_marginBottom="@dimen/dimens_pumpkin_movie_score_flag_bg_margin_bottom" android:text="" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                                </RelativeLayout>
+                            </RelativeLayout>
+                            <TextView android:layout_gravity="center_horizontal" android:id="@id/txt_information" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_36" style="@style/size_9f_14" />
+                            <TextView android:textSize="@dimen/text_13" android:textColor="@color/color_cccccc" android:layout_gravity="center_horizontal" android:id="@id/txt_tip_horror" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_28" android:text="@string/movie_detail_horror" />
+                            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_play_video" android:background="@drawable/login_btn_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_28" android:layout_marginTop="@dimen/base_dimen_36" android:layout_marginRight="@dimen/base_dimen_28">
+                                <ImageView android:id="@id/image_play_video" android:layout_width="@dimen/base_dimen_28" android:layout_height="@dimen/base_dimen_28" android:src="@drawable/icon_play_movie" android:scaleType="centerCrop" />
+                                <TextView android:textSize="@dimen/text_14" android:textColor="@color/color_efefef" android:id="@id/txt_play_video" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_24" android:text="@string/home_start_play" />
+                            </LinearLayout>
+                            <TextView android:textSize="@dimen/text_14" android:textColor="@color/color_efefef" android:id="@id/txt_synopsis" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_28" android:layout_marginTop="@dimen/base_dimen_20" android:layout_marginRight="@dimen/base_dimen_28" android:layout_marginBottom="@dimen/base_dimen_32" android:lineSpacingExtra="@dimen/base_dimen_10" />
+                            <TextView android:ellipsize="end" android:id="@id/txt_actor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_28" android:layout_marginRight="@dimen/base_dimen_28" android:lines="1" style="@style/size_9f_13" />
+                            <TextView android:ellipsize="end" android:id="@id/txt_director" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_28" android:layout_marginRight="@dimen/base_dimen_28" android:lines="1" style="@style/size_9f_13" />
+                            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_28" android:layout_marginRight="@dimen/base_dimen_28">
+                                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_collect" android:paddingTop="@dimen/base_dimen_44" android:paddingBottom="@dimen/base_dimen_44" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                                    <ImageView android:id="@id/img_collect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_movie_detail_collect" />
+                                    <TextView android:id="@id/txt_collect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_16" android:text="@string/video_detail_collect" style="@style/size_9f_11" />
+                                </LinearLayout>
+                                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_appraise" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                                    <ImageView android:id="@id/img_appraise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_video_detail_appraise" />
+                                    <TextView android:id="@id/txt_appraise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_16" android:text="@string/video_detail_appraise" style="@style/size_9f_11" />
+                                </LinearLayout>
+                                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_share" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                                    <ImageView android:id="@id/img_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_video_detail_share" />
+                                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_16" android:text="@string/video_detail_share" style="@style/size_9f_11" />
+                                </LinearLayout>
+                                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_download" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                                    <ImageView android:id="@id/img_download" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_video_detail_download" />
+                                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_16" android:text="@string/video_detail_download" style="@style/size_9f_11" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/layout_detail_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/image_poster_blur">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/ll_season" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_8" android:layout_marginBottom="@dimen/base_dimen_40">
+                            <android.support.v7.widget.RecyclerView android:id="@id/teleplay_season_recyclerview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@id/ll_teleplay_episode" android:background="@color/main_color" android:paddingBottom="@dimen/base_dimen_40" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <RelativeLayout android:paddingLeft="@dimen/base_dimen_28" android:paddingRight="@dimen/base_dimen_28" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textSize="@dimen/text_15" android:textColor="@color/color_efefef" android:id="@id/txt_teleplay_episode_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/video_detail_teleplay_episode_title" />
+                                <ImageView android:id="@id/image_arrow" android:layout_width="11.0dip" android:layout_height="11.0dip" android:src="@drawable/arrow_right_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                                <TextView android:textSize="@dimen/text_11" android:textColor="@color/color_9f9f9f" android:id="@id/txt_episode_reminder" android:paddingLeft="@dimen/space_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more" android:layout_toLeftOf="@id/image_arrow" android:layout_centerVertical="true" />
+                            </RelativeLayout>
+                            <android.support.v7.widget.RecyclerView android:id="@id/teleplay_recyclerview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_34" />
+                        </LinearLayout>
+                        <View android:background="@color/black" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_12" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <android.support.v7.widget.Toolbar android:id="@id/toolBar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_collapseMode="pin">
+                    <TextView android:textSize="@dimen/text_18" android:textColor="@color/color_efefef" android:ellipsize="end" android:layout_gravity="center" android:id="@id/txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/base_dimen_30" android:lines="1" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.CollapsingToolbarLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_recommend" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <android.support.design.widget.TabLayout android:id="@id/detail_tablayout" android:layout_width="wrap_content" android:layout_height="wrap_content" app:tabIndicatorHeight="0.0dip" app:tabMode="scrollable" />
+                <View android:background="@color/color_222222" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_2" />
+            </LinearLayout>
+        </android.support.design.widget.AppBarLayout>
+        <cn.vcinema.cinema.view.NestingViewPager android:id="@id/detail_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </cn.vcinema.cinema.view.CustomCoordinatorLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/issue_comment" android:background="@color/color_333333" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_98" android:layout_alignParentBottom="true">
+        <cn.vcinema.cinema.utils.glide.CircleImageView android:id="@id/comment_user_head" android:layout_width="@dimen/base_dimen_64" android:layout_height="@dimen/base_dimen_64" android:src="@drawable/userphoto_login" />
+        <TextView android:textSize="@dimen/text_14" android:textColor="@color/color_cccccc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_24" android:text="@string/send_comment_tip" />
+    </LinearLayout>
+    <ImageView android:id="@id/left_button" android:padding="14.0dip" android:visibility="visible" android:layout_width="@dimen/base_dimen_110" android:layout_height="@dimen/base_dimen_110" android:src="@drawable/icon_close_movie_detail" android:layout_alignParentRight="true" />
+    <include android:id="@id/empty_view" android:visibility="gone" layout="@layout/no_network_layout" />
+    <ViewStub android:id="@id/viewstub" android:background="@color/black" android:layout="@layout/viewstub_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

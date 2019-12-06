@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/horizon_loading_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/loading_internetspeed_iv_bg" android:background="@drawable/horizon_loading_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+    <ImageView android:id="@id/loading_internetspeed_iv_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="17.0dip" android:src="@drawable/horizon_loading_logo" android:layout_above="@id/loading_internetspeed_iv_line" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/loading_internetspeed_iv_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/horizon_loading_line" android:layout_centerInParent="true" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffefefef" android:id="@id/loading_internetspeed_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:text="" android:layout_below="@id/loading_internetspeed_iv_line" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/loading_rl_left_button" android:layout_width="40.0dip" android:layout_height="50.0dip" android:src="@drawable/detainment_back_icon" android:scaleType="center" />
+</RelativeLayout>

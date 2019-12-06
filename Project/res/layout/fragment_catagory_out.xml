@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/classify_drawer_layout" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/color_222222" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:gravity="center" android:id="@id/iv_drawerlayout" android:visibility="gone" android:layout_width="@dimen/base_dimen_88" android:layout_height="@dimen/base_dimen_88" android:src="@drawable/drawlayout_icon" android:scaleType="centerInside" />
+        <android.support.design.widget.TabLayout android:id="@id/tab_FindFragment_title" android:background="@color/color_222222" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_88" android:layout_toLeftOf="@id/iv_search" app:tabTextColor="@color/color_efefef" app:tabIndicatorHeight="0.0dip" app:tabSelectedTextColor="@color/tab_select" />
+        <ImageView android:gravity="center" android:id="@id/iv_search" android:layout_width="@dimen/base_dimen_88" android:layout_height="@dimen/base_dimen_88" android:src="@drawable/img_category_title_search_btn" android:scaleType="centerInside" android:layout_alignParentRight="true" />
+        <android.support.v4.view.ViewPager android:id="@id/vp_FindFragment_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_below="@id/tab_FindFragment_title" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="left" android:background="@color/colorBlack" android:layout_width="@dimen/base_dimen_640" android:layout_height="fill_parent">
+        <android.support.v7.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@id/list" android:background="@color/colorBlack" android:clickable="true" android:layout_width="@dimen/base_dimen_640" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/base_dimen_20" android:layout_marginTop="@dimen/base_dimen_30" android:layout_marginRight="@dimen/base_dimen_20" />
+    </RelativeLayout>
+</LinearLayout>

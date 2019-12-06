@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_view" android:paddingLeft="@dimen/space_14" android:paddingBottom="@dimen/space_16" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/preview_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/picdefault" android:scaleType="centerCrop" />
+    <TextView android:textColor="@color/home_title" android:ellipsize="end" android:id="@id/preview_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:singleLine="true" android:layout_below="@id/preview_img" style="@style/normal_size" />
+    <TextView android:textSize="@dimen/text_9" android:textColor="@color/color_efefef" android:gravity="center|right" android:id="@id/txt_teleplay_reminder" android:background="#80000000" android:paddingRight="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/space_15" android:layout_alignBottom="@id/preview_img" android:layout_alignParentLeft="true" />
+</RelativeLayout>

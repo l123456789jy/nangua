@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_setting_privacy_rule" android:background="@color/color_2c2c2c" android:paddingLeft="@dimen/base_dimen_28" android:paddingRight="@dimen/base_dimen_28" android:layout_width="fill_parent" android:layout_height="52.0dip">
+        <TextView android:textSize="@dimen/text_14" android:textColor="@color/color_dbdbdb" android:gravity="center_vertical" android:id="@id/text_privacy_rule_content" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/text_14" android:textColor="@color/color_9f9f9f" android:gravity="center_vertical" android:id="@id/text_setting_rule" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" />
+        <ImageView android:layout_gravity="center_vertical" android:background="@drawable/arrow_right_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_13" android:textColor="@color/color_9f9f9f" android:id="@id/text_privacy_rule_msg" android:paddingLeft="@dimen/base_dimen_40" android:paddingTop="@dimen/base_dimen_16" android:paddingRight="@dimen/base_dimen_28" android:paddingBottom="@dimen/base_dimen_28" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+</LinearLayout>

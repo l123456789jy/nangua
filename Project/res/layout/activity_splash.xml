@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/start_image" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_splash" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <Button android:textSize="@dimen/text_12" android:textColor="@color/c_ffffff" android:id="@id/btn_splash" android:background="@drawable/splash_jump_btn_shape" android:visibility="gone" android:layout_width="@dimen/base_dimen_102" android:layout_height="@dimen/base_dimen_42" android:layout_marginTop="@dimen/base_dimen_16" android:layout_marginRight="@dimen/base_dimen_8" android:text="@string/splash_skip" android:layout_alignParentRight="true" />
+    <RelativeLayout android:id="@id/rl_more" android:background="@color/splash_rl_more_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_80" android:layout_above="@id/rl_bottom">
+        <TextView android:textSize="@dimen/text_15" android:textColor="@color/color_efefef" android:id="@id/tv_splash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/base_dimen_28" android:text="@string/splash_tv" android:layout_centerVertical="true" />
+        <ImageView android:layout_width="@dimen/base_dimen_18" android:layout_height="@dimen/base_dimen_30" android:layout_marginRight="@dimen/base_dimen_28" android:src="@drawable/splash_iv_more" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_bottom" android:background="@color/color_efefef" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/base_dimen_170" android:layout_alignParentBottom="true">
+        <ImageView android:layout_width="@dimen/base_dimen_204" android:layout_height="@dimen/base_dimen_81" android:src="@drawable/splash_logo" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/drawerlayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/renew_main" android:background="@drawable/vertical_full_defult_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.RecyclerView android:id="@id/renew_recyclerview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/text_13" android:textColor="@color/color_efefef" android:id="@id/expire_tip" android:paddingLeft="@dimen/base_dimen_28" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_28" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_logout" android:paddingLeft="@dimen/base_dimen_34" android:paddingTop="@dimen/base_dimen_20" android:paddingRight="@dimen/base_dimen_34" android:paddingBottom="@dimen/base_dimen_26" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_50" android:layout_below="@id/expire_tip" android:layout_alignParentRight="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_renew_logout" android:scaleType="centerCrop" />
+            <TextView android:textSize="@dimen/text_14" android:textColor="@color/color_efefef" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_12" android:text="@string/logout_tip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_renew_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/base_dimen_34" android:layout_marginBottom="@dimen/base_dimen_50" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/image_renew" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_renew" android:scaleType="centerCrop" />
+            <TextView android:textSize="@dimen/text_14" android:textColor="@color/color_efefef" android:id="@id/renew_icon_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_12" android:scaleType="centerCrop" android:text="@string/renew_tip" />
+        </LinearLayout>
+    </FrameLayout>
+    <RelativeLayout android:gravity="end" android:background="@color/color_4d000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.RecyclerView android:id="@id/renew_recycler_category" android:background="@color/color_cd121212" android:paddingTop="@dimen/base_dimen_26" android:visibility="gone" android:layout_width="@dimen/base_dimen_134" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>

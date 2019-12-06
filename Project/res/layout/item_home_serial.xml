@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img_serial1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/serial_default" android:scaleType="centerCrop" />
+        <TextView android:textSize="@dimen/text_pumpkin_vod_flag_size" android:textColor="@color/color_pumpkin_seed_vod_flag_text" android:id="@id/tv_pumpkin_vod_flag" android:background="@drawable/corners_pumpkin_seed_vod_flag_bg" android:paddingLeft="@dimen/dimens_pumpkin_vod_flag_bg_padding_left" android:paddingRight="@dimen/dimens_pumpkin_vod_flag_bg_padding_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_pumpkin_vod_flag_bg_margin_left" />
+        <RelativeLayout android:id="@id/layout_mb" android:background="@drawable/movie_score_bottom_shade_layout_bg" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/text_pumpkin_movie_score_flag_size" android:textColor="@color/color_pumpkin_seed_movie_score_flag_text" android:gravity="center" android:id="@id/tv_pumpkin_movie_score_flag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimens_pumpkin_movie_score_flag_bg_margin_right" android:layout_marginBottom="@dimen/dimens_pumpkin_movie_score_flag_bg_margin_bottom" android:text="" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
